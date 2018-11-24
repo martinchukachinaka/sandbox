@@ -1,0 +1,37 @@
+{
+    "publisherInfo": {
+        "name": "ABC Bank",
+        "active": true
+    },
+    "serviceList": [
+        {
+            "group": "ACCOUNT",
+            "services": [
+                {
+                    "name": "Get Account",
+                    "active": true
+                },
+                {
+                    "name": "Get Account Balance",
+                    "active": true
+                },
+                {
+                    "name": "Get Account By Customer Id",
+                    "active": true
+                },
+                {
+                    "name": "Get Account By Customer Email",
+                    "active": true
+                },
+                {
+                    "name": "Get Account By Customer Phone",
+                    "active": true
+                },
+                {
+                    "name": "Get Account By BVN",
+                    "active": true
+                }
+            ]
+        }
+    ]
+}
