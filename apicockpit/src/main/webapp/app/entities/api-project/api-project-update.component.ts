@@ -80,7 +80,6 @@ export class ApiProjectUpdateComponent implements OnInit {
 
     save() {
         this.isSaving = true;
-        this.apiProject.dateCreated = this.dateCreated != null ? moment(this.dateCreated, DATE_TIME_FORMAT) : null;
         if (this.apiProject.id !== undefined) {
             this.subscribeToSaveResponse(this.apiProjectService.update(this.apiProject));
         } else {
@@ -105,9 +104,9 @@ export class ApiProjectUpdateComponent implements OnInit {
         this.jhiAlertService.error(errorMessage, null, null);
     }
 
-    trackApiProjectAuthConfigById(index: number, item: IApiProjectAuthConfig) {
-        return item.id;
-    }
+    // trackApiProjectAuthConfigById(index: number, item: IApiProjectAuthConfig) {
+    //     return item.id;
+    // }
 
     trackApiProjectServiceById(index: number, item: IApiProjectService) {
         return item.id;

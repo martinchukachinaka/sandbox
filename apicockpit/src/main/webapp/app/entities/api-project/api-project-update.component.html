@@ -1,7 +1,7 @@
 <div class="row justify-content-center">
     <div class="col-8">
         <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
-            <h2 id="jhi-api-project-heading" jhiTranslate="apicockpitApp.apiProject.home.createOrEditLabel">Create or edit a Api Project</h2>
+            <h2 id="jhi-api-project-heading" jhiTranslate="apicockpitApp.apiProject.home.createOrEditLabel">New Project</h2>
             <div>
                 <jhi-alert-error></jhi-alert-error>
                 <div class="form-group" [hidden]="!apiProject.id">
@@ -31,31 +31,6 @@
                         [(ngModel)]="apiProject.active" />
                 </div>
                 <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="apicockpitApp.apiProject.dateCreated" for="field_dateCreated">Date Created</label>
-                    <div class="d-flex">
-                        <input id="field_dateCreated" type="datetime-local" class="form-control" name="dateCreated" [(ngModel)]="dateCreated"
-                        required/>
-                    </div>
-                    <div [hidden]="!(editForm.controls.dateCreated?.dirty && editForm.controls.dateCreated?.invalid)">
-                        <small class="form-text text-danger"
-                        [hidden]="!editForm.controls.dateCreated?.errors?.required" jhiTranslate="entity.validation.required">
-                        This field is required.
-                        </small>
-                        <small class="form-text text-danger"
-                            [hidden]="!editForm.controls.dateCreated?.errors?.ZonedDateTimelocal" jhiTranslate="entity.validation.ZonedDateTimelocal">
-                            This field should be a date and time.
-                        </small>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="apicockpitApp.apiProject.apiKey" for="field_apiKey">Api Key</label>
-                    <select class="form-control" id="field_apiKey" name="apiKey" [(ngModel)]="apiProject.apiKeyId">
-                        <option [ngValue]="null"></option>
-                        <option [ngValue]="apiProjectAuthConfigOption.id" *ngFor="let apiProjectAuthConfigOption of apikeys; trackBy: trackApiProjectAuthConfigById">{{apiProjectAuthConfigOption.clientId}}</option>
-                    </select>
-                </div>
-                <div class="form-group">
                     <label jhiTranslate="apicockpitApp.apiProject.api" for="field_api">Api</label>
                     <select class="form-control" id="field_api" multiple name="api" [(ngModel)]="apiProject.apis">
                         <option [ngValue]="getSelected(apiProject.apis, apiProjectServiceOption)" *ngFor="let apiProjectServiceOption of apiprojectservices; trackBy: trackApiProjectServiceById">{{apiProjectServiceOption.name}}</option>
@@ -79,4 +54,5 @@
             </div>
         </form>
     </div>
+
 </div>

@@ -353,22 +353,6 @@
             <artifactId>spring-security-data</artifactId>
         </dependency>
         <!-- jhipster-needle-maven-add-dependency -->
-
-        <!--<dependency>-->
-            <!--<artifactId>obn-ng-engine</artifactId>-->
-            <!--<groupId>com.apifuze.obn.ng.engine</groupId>-->
-            <!--<version>0.0.1-SNAPSHOT</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>ng.openbanking</groupId>-->
-            <!--<artifactId>bank-service</artifactId>-->
-            <!--<version>0.0.6-SNAPSHOT</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>ng.openbanking</groupId>-->
-            <!--<artifactId>web-service</artifactId>-->
-            <!--<version>0.0.6-SNAPSHOT</version>-->
-        <!--</dependency>-->
     </dependencies>
 
     <build>

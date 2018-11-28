@@ -1,9 +1,12 @@
 package com.apifuze.cockpit.service;
 
 import com.apifuze.cockpit.domain.ApiProject;
+import com.apifuze.cockpit.domain.ApiProjectAuthConfig;
+import com.apifuze.cockpit.repository.ApiProjectAuthConfigRepository;
 import com.apifuze.cockpit.repository.ApiProjectRepository;
 import com.apifuze.cockpit.service.dto.ApiProjectDTO;
 import com.apifuze.cockpit.service.mapper.ApiProjectMapper;
+import com.apifuze.cockpit.service.util.RandomUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,6 +15,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.Instant;
 import java.util.Optional;
 
 /**
@@ -25,10 +29,13 @@ public class ApiProjectService {
 
     private final ApiProjectRepository apiProjectRepository;
 
+    private final ApiProjectAuthConfigRepository apiProjectAuthConfigRepository;
+
     private final ApiProjectMapper apiProjectMapper;
 
-    public ApiProjectService(ApiProjectRepository apiProjectRepository, ApiProjectMapper apiProjectMapper) {
+    public ApiProjectService(ApiProjectRepository apiProjectRepository, ApiProjectAuthConfigRepository apiProjectAuthConfigRepository, ApiProjectMapper apiProjectMapper) {
         this.apiProjectRepository = apiProjectRepository;
+        this.apiProjectAuthConfigRepository=apiProjectAuthConfigRepository;
         this.apiProjectMapper = apiProjectMapper;
     }
 
@@ -40,7 +47,16 @@ public class ApiProjectService {
      */
     public ApiProjectDTO save(ApiProjectDTO apiProjectDTO) {
         log.debug("Request to save ApiProject : {}", apiProjectDTO);
-
+        ApiProjectAuthConfig apiKey=new ApiProjectAuthConfig();
+        apiKey.setActive(Boolean.TRUE);
+        apiKey.setDateCreated(Instant.now());
+        apiKey.setClientSecret(RandomUtil.generatePassword());
+        apiKey.setClientId(RandomUtil.generateActivationKey());
+        apiKey=apiProjectAuthConfigRepository.save(apiKey);
+        apiProjectDTO.setApiKeyId(apiKey.getId());
+        if(apiProjectDTO.getDateCreated()==null) {
+            apiProjectDTO.setDateCreated(Instant.now());
+        }
         ApiProject apiProject = apiProjectMapper.toEntity(apiProjectDTO);
         apiProject = apiProjectRepository.save(apiProject);
         return apiProjectMapper.toDto(apiProject);

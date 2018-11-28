@@ -19,16 +19,14 @@ export class ApiProjectService {
     constructor(private http: HttpClient) {}
 
     create(apiProject: IApiProject): Observable<EntityResponseType> {
-        const copy = this.convertDateFromClient(apiProject);
         return this.http
-            .post<IApiProject>(this.resourceUrl, copy, { observe: 'response' })
+            .post<IApiProject>(this.resourceUrl, apiProject, { observe: 'response' })
             .pipe(map((res: EntityResponseType) => this.convertDateFromServer(res)));
     }
 
     update(apiProject: IApiProject): Observable<EntityResponseType> {
-        const copy = this.convertDateFromClient(apiProject);
         return this.http
-            .put<IApiProject>(this.resourceUrl, copy, { observe: 'response' })
+            .put<IApiProject>(this.resourceUrl, apiProject, { observe: 'response' })
             .pipe(map((res: EntityResponseType) => this.convertDateFromServer(res)));
     }
 

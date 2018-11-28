@@ -21,7 +21,7 @@ public class ApiProjectDTO implements Serializable {
 
     private Boolean active;
 
-    @NotNull
+
     private Instant dateCreated;
 
     private Long apiKeyId;
