@@ -48,7 +48,7 @@ public class DataService {
         File file;
         String dataFilePath;
         if (StringUtils.isEmpty(OBN_HOME)) {
-            dataFilePath=String.format("OBN_HOME/data/%s", dataFileName);
+            dataFilePath=String.format("/data/%s", dataFileName);
             log.debug("OBN_HOME not configured attempting to load from default {}",dataFilePath);
             ClassPathResource classPathResource = new ClassPathResource(dataFilePath);
             file =classPathResource.getFile();
