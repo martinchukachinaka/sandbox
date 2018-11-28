@@ -38,6 +38,32 @@ public class CacheConfiguration {
             cm.createCache(com.apifuze.cockpit.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(com.apifuze.cockpit.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(com.apifuze.cockpit.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(com.apifuze.cockpit.domain.PlatformUser.class.getName(), jcacheConfiguration);
+            cm.createCache(com.apifuze.cockpit.domain.ApiPublisherProfile.class.getName(), jcacheConfiguration);
+            cm.createCache(com.apifuze.cockpit.domain.ApiPublisherProfile.class.getName() + ".consumerProfiles", jcacheConfiguration);
+            cm.createCache(com.apifuze.cockpit.domain.ApiPublisherProfile.class.getName() + ".serviceConfigs", jcacheConfiguration);
+            cm.createCache(com.apifuze.cockpit.domain.ApiPublisherProfile.class.getName() + ".platformUsers", jcacheConfiguration);
+            cm.createCache(com.apifuze.cockpit.domain.ApiConsumerProfile.class.getName(), jcacheConfiguration);
+            cm.createCache(com.apifuze.cockpit.domain.ApiConsumerProfile.class.getName() + ".projects", jcacheConfiguration);
+            cm.createCache(com.apifuze.cockpit.domain.ApiConsumerProfile.class.getName() + ".platformUsers", jcacheConfiguration);
+            cm.createCache(com.apifuze.cockpit.domain.ApiProject.class.getName(), jcacheConfiguration);
+            cm.createCache(com.apifuze.cockpit.domain.ApiServiceGroup.class.getName(), jcacheConfiguration);
+            cm.createCache(com.apifuze.cockpit.domain.ApiServiceConfig.class.getName(), jcacheConfiguration);
+            cm.createCache(com.apifuze.cockpit.domain.ApiServiceConfig.class.getName() + ".actions", jcacheConfiguration);
+            cm.createCache(com.apifuze.cockpit.domain.ApiProjectService.class.getName(), jcacheConfiguration);
+            cm.createCache(com.apifuze.cockpit.domain.ApiProjectAuthConfig.class.getName(), jcacheConfiguration);
+            cm.createCache(com.apifuze.cockpit.domain.ApiSvcProcConfig.class.getName(), jcacheConfiguration);
+            cm.createCache(com.apifuze.cockpit.domain.DbProcConfig.class.getName(), jcacheConfiguration);
+            cm.createCache(com.apifuze.cockpit.domain.GrovyProcConfig.class.getName(), jcacheConfiguration);
+            cm.createCache(com.apifuze.cockpit.domain.ApiServiceGroup.class.getName() + ".availableServices", jcacheConfiguration);
+            cm.createCache(com.apifuze.cockpit.domain.ApiServiceConfig.class.getName() + ".apiProjectServices", jcacheConfiguration);
+            cm.createCache(com.apifuze.cockpit.domain.ApiProjectService.class.getName() + ".serviceConfigs", jcacheConfiguration);
+            cm.createCache(com.apifuze.cockpit.domain.ApiServiceConfig.class.getName() + ".serviceGroups", jcacheConfiguration);
+            cm.createCache(com.apifuze.cockpit.domain.ApiProjectService.class.getName() + ".projects", jcacheConfiguration);
+            cm.createCache(com.apifuze.cockpit.domain.ApiProject.class.getName() + ".", jcacheConfiguration);
+            cm.createCache(com.apifuze.cockpit.domain.ApiProject.class.getName() + ".apiProjectServices", jcacheConfiguration);
+            cm.createCache(com.apifuze.cockpit.domain.ApiProject.class.getName() + ".apis", jcacheConfiguration);
+            cm.createCache(com.apifuze.cockpit.domain.ApiPublisherProfile.class.getName() + ".users", jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }

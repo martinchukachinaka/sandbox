@@ -5,6 +5,27 @@
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181124182209_added_entity_PlatformUser.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181124182210_added_entity_ApiPublisherProfile.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181124182211_added_entity_ApiConsumerProfile.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181124182212_added_entity_ApiProject.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181124182213_added_entity_ApiServiceGroup.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181124182214_added_entity_ApiServiceConfig.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181124182215_added_entity_ApiProjectService.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181124182216_added_entity_ApiProjectAuthConfig.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181124182217_added_entity_ApiSvcProcConfig.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181124182218_added_entity_DbProcConfig.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181124182219_added_entity_GrovyProcConfig.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20181124182209_added_entity_constraints_PlatformUser.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181124182211_added_entity_constraints_ApiConsumerProfile.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181124182212_added_entity_constraints_ApiProject.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181124182214_added_entity_constraints_ApiServiceConfig.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181124182215_added_entity_constraints_ApiProjectService.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181124182217_added_entity_constraints_ApiSvcProcConfig.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181124182218_added_entity_constraints_DbProcConfig.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181124182219_added_entity_constraints_GrovyProcConfig.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181124182213_added_entity_constraints_ApiServiceGroup.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181124182210_added_entity_constraints_ApiPublisherProfile.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>

@@ -7,6 +7,17 @@
             "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
             "entities": {
                 "main": "Entities",
+                "platformUser": "Platform User",
+                "apiPublisherProfile": "Api Publisher Profile",
+                "apiConsumerProfile": "Api Consumer Profile",
+                "apiProject": "Api Project",
+                "apiServiceGroup": "Api Service Group",
+                "apiServiceConfig": "Api Service Config",
+                "apiProjectService": "Api Project Service",
+                "apiProjectAuthConfig": "Api Project Auth Config",
+                "apiSvcProcConfig": "Api Svc Proc Config",
+                "dbProcConfig": "Db Proc Config",
+                "grovyProcConfig": "Grovy Proc Config",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {
