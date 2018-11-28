@@ -1,0 +1,56 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-platform-user-heading" jhiTranslate="apicockpitApp.platformUser.home.createOrEditLabel">Create or edit a Platform User</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!platformUser.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="platformUser.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="apicockpitApp.platformUser.phoneNumber" for="field_phoneNumber">Phone Number</label>
+                    <input type="text" class="form-control" name="phoneNumber" id="field_phoneNumber"
+                        [(ngModel)]="platformUser.phoneNumber" required/>
+                    <div [hidden]="!(editForm.controls.phoneNumber?.dirty && editForm.controls.phoneNumber?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.phoneNumber?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="apicockpitApp.platformUser.user" for="field_user">User</label>
+                    <select class="form-control" id="field_user" name="user" [(ngModel)]="platformUser.userId" >
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="userOption.id" *ngFor="let userOption of users; trackBy: trackUserById">{{userOption.id}}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="apicockpitApp.platformUser.apiPublisherProfile" for="field_apiPublisherProfile">Api Publisher Profile</label>
+                    <select class="form-control" id="field_apiPublisherProfile" name="apiPublisherProfile" [(ngModel)]="platformUser.apiPublisherProfileId">
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="apiPublisherProfileOption.id" *ngFor="let apiPublisherProfileOption of apipublisherprofiles; trackBy: trackApiPublisherProfileById">{{apiPublisherProfileOption.id}}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="apicockpitApp.platformUser.apiConsumerProfile" for="field_apiConsumerProfile">Api Consumer Profile</label>
+                    <select class="form-control" id="field_apiConsumerProfile" name="apiConsumerProfile" [(ngModel)]="platformUser.apiConsumerProfileId">
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="apiConsumerProfileOption.id" *ngFor="let apiConsumerProfileOption of apiconsumerprofiles; trackBy: trackApiConsumerProfileById">{{apiConsumerProfileOption.id}}</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

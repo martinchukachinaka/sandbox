@@ -1,0 +1,53 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="apiSvcProcConfig">
+            <h2><span jhiTranslate="apicockpitApp.apiSvcProcConfig.detail.title">Api Svc Proc Config</span> {{apiSvcProcConfig.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="apicockpitApp.apiSvcProcConfig.name">Name</span></dt>
+                <dd>
+                    <span>{{apiSvcProcConfig.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.apiSvcProcConfig.description">Description</span></dt>
+                <dd>
+                    <span>{{apiSvcProcConfig.description}}</span>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.apiSvcProcConfig.active">Active</span></dt>
+                <dd>
+                    <span>{{apiSvcProcConfig.active}}</span>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.apiSvcProcConfig.dateCreated">Date Created</span></dt>
+                <dd>
+                    <span>{{apiSvcProcConfig.dateCreated}}</span>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.apiSvcProcConfig.processorType">Processor Type</span></dt>
+                <dd>
+                    <span jhiTranslate="{{'apicockpitApp.ProcessorType.' + apiSvcProcConfig.processorType}}">{{apiSvcProcConfig.processorType}}</span>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.apiSvcProcConfig.order">Order</span></dt>
+                <dd>
+                    <span>{{apiSvcProcConfig.order}}</span>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.apiSvcProcConfig.serviceConfig">Service Config</span></dt>
+                <dd>
+                    <div *ngIf="apiSvcProcConfig.serviceConfigId">
+                        <a [routerLink]="['/api-service-config', apiSvcProcConfig.serviceConfigId, 'view']">{{apiSvcProcConfig.serviceConfigName}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/api-svc-proc-config', apiSvcProcConfig.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

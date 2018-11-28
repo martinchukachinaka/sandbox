@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity ApiServiceConfig.
+    -->
+    <changeSet id="20181124182214-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="service_group_id"
+                                 baseTableName="api_service_config"
+                                 constraintName="fk_api_service_config_service_group_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="api_service_group"/>
+
+    </changeSet>
+</databaseChangeLog>

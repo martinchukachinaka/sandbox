@@ -1,0 +1,40 @@
+{
+    "name": "ApiServiceGroup",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "availableServices",
+            "otherEntityName": "apiServiceConfig",
+            "otherEntityRelationshipName": "serviceGroup"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "owner",
+            "otherEntityName": "apiPublisherProfile",
+            "otherEntityField": "name"
+        }
+    ],
+    "changelogDate": "20181124182213",
+    "javadoc": "Service API defination template",
+    "entityTableName": "api_service_group",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

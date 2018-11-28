@@ -1,0 +1,57 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="apiServiceConfig">
+            <h2><span jhiTranslate="apicockpitApp.apiServiceConfig.detail.title">Api Service Config</span> {{apiServiceConfig.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="apicockpitApp.apiServiceConfig.name">Name</span></dt>
+                <dd>
+                    <span>{{apiServiceConfig.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.apiServiceConfig.code">Code</span></dt>
+                <dd>
+                    <span>{{apiServiceConfig.code}}</span>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.apiServiceConfig.description">Description</span></dt>
+                <dd>
+                    <span>{{apiServiceConfig.description}}</span>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.apiServiceConfig.serviceUrl">Service Url</span></dt>
+                <dd>
+                    <span>{{apiServiceConfig.serviceUrl}}</span>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.apiServiceConfig.serviceDocUrl">Service Doc Url</span></dt>
+                <dd>
+                    <span>{{apiServiceConfig.serviceDocUrl}}</span>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.apiServiceConfig.active">Active</span></dt>
+                <dd>
+                    <span>{{apiServiceConfig.active}}</span>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.apiServiceConfig.dateCreated">Date Created</span></dt>
+                <dd>
+                    <span>{{apiServiceConfig.dateCreated}}</span>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.apiServiceConfig.serviceGroup">Service Group</span></dt>
+                <dd>
+                    <div *ngIf="apiServiceConfig.serviceGroupId">
+                        <a [routerLink]="['/api-service-group', apiServiceConfig.serviceGroupId, 'view']">{{apiServiceConfig.serviceGroupName}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/api-service-config', apiServiceConfig.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

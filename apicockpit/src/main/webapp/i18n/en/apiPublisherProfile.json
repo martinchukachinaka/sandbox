@@ -1,0 +1,28 @@
+{
+    "apicockpitApp": {
+        "apiPublisherProfile": {
+            "home": {
+                "title": "Api Publisher Profiles",
+                "createLabel": "Create a new Api Publisher Profile",
+                "createOrEditLabel": "Create or edit a Api Publisher Profile"
+            },
+            "created": "A new Api Publisher Profile is created with identifier {{ param }}",
+            "updated": "A Api Publisher Profile is updated with identifier {{ param }}",
+            "deleted": "A Api Publisher Profile is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Api Publisher Profile {{ id }}?"
+            },
+            "detail": {
+                "title": "Api Publisher Profile"
+            },
+            "name": "Name",
+            "active": "Active",
+            "apiBaseUrl": "Api Base Url",
+            "apiDocUrl": "Api Doc Url",
+            "dateCreated": "Date Created",
+            "consumerProfiles": "Consumer Profiles",
+            "serviceConfig": "Service Config",
+            "platformUser": "Platform User"
+        }
+    }
+}

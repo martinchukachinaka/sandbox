@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity ApiProject.
+    -->
+    <changeSet id="20181124182212-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="api_key_id"
+                                 baseTableName="api_project"
+                                 constraintName="fk_api_project_api_key_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="api_project_auth_config"/>
+
+        <addForeignKeyConstraint baseColumnNames="api_projects_id"
+                                 baseTableName="api_project_api"
+                                 constraintName="fk_api_project_api_api_projects_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="api_project"/>
+        <addForeignKeyConstraint baseColumnNames="apis_id"
+                                 baseTableName="api_project_api"
+                                 constraintName="fk_api_project_api_apis_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="api_project_service"/>
+        
+        <addForeignKeyConstraint baseColumnNames="owner_id"
+                                 baseTableName="api_project"
+                                 constraintName="fk_api_project_owner_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="api_consumer_profile"/>
+
+    </changeSet>
+</databaseChangeLog>

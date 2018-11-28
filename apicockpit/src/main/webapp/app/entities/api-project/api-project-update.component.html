@@ -1,0 +1,82 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-api-project-heading" jhiTranslate="apicockpitApp.apiProject.home.createOrEditLabel">Create or edit a Api Project</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!apiProject.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="apiProject.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="apicockpitApp.apiProject.name" for="field_name">Name</label>
+                    <input type="text" class="form-control" name="name" id="field_name"
+                        [(ngModel)]="apiProject.name" required/>
+                    <div [hidden]="!(editForm.controls.name?.dirty && editForm.controls.name?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.name?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="apicockpitApp.apiProject.description" for="field_description">Description</label>
+                    <input type="text" class="form-control" name="description" id="field_description"
+                        [(ngModel)]="apiProject.description" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="apicockpitApp.apiProject.active" for="field_active">Active</label>
+                    <input type="checkbox" class="form-control" name="active" id="field_active"
+                        [(ngModel)]="apiProject.active" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="apicockpitApp.apiProject.dateCreated" for="field_dateCreated">Date Created</label>
+                    <div class="d-flex">
+                        <input id="field_dateCreated" type="datetime-local" class="form-control" name="dateCreated" [(ngModel)]="dateCreated"
+                        required/>
+                    </div>
+                    <div [hidden]="!(editForm.controls.dateCreated?.dirty && editForm.controls.dateCreated?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.dateCreated?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                            [hidden]="!editForm.controls.dateCreated?.errors?.ZonedDateTimelocal" jhiTranslate="entity.validation.ZonedDateTimelocal">
+                            This field should be a date and time.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="apicockpitApp.apiProject.apiKey" for="field_apiKey">Api Key</label>
+                    <select class="form-control" id="field_apiKey" name="apiKey" [(ngModel)]="apiProject.apiKeyId">
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="apiProjectAuthConfigOption.id" *ngFor="let apiProjectAuthConfigOption of apikeys; trackBy: trackApiProjectAuthConfigById">{{apiProjectAuthConfigOption.clientId}}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label jhiTranslate="apicockpitApp.apiProject.api" for="field_api">Api</label>
+                    <select class="form-control" id="field_api" multiple name="api" [(ngModel)]="apiProject.apis">
+                        <option [ngValue]="getSelected(apiProject.apis, apiProjectServiceOption)" *ngFor="let apiProjectServiceOption of apiprojectservices; trackBy: trackApiProjectServiceById">{{apiProjectServiceOption.name}}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="apicockpitApp.apiProject.owner" for="field_owner">Owner</label>
+                    <select class="form-control" id="field_owner" name="owner" [(ngModel)]="apiProject.ownerId" >
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="apiConsumerProfileOption.id" *ngFor="let apiConsumerProfileOption of apiconsumerprofiles; trackBy: trackApiConsumerProfileById">{{apiConsumerProfileOption.name}}</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

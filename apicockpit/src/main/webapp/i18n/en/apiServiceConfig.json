@@ -1,0 +1,29 @@
+{
+    "apicockpitApp": {
+        "apiServiceConfig": {
+            "home": {
+                "title": "Api Service Configs",
+                "createLabel": "Create a new Api Service Config",
+                "createOrEditLabel": "Create or edit a Api Service Config"
+            },
+            "created": "A new Api Service Config is created with identifier {{ param }}",
+            "updated": "A Api Service Config is updated with identifier {{ param }}",
+            "deleted": "A Api Service Config is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Api Service Config {{ id }}?"
+            },
+            "detail": {
+                "title": "Api Service Config"
+            },
+            "name": "Name",
+            "code": "Code",
+            "description": "Description",
+            "serviceUrl": "Service Url",
+            "serviceDocUrl": "Service Doc Url",
+            "active": "Active",
+            "dateCreated": "Date Created",
+            "serviceGroup": "Service Group",
+            "actions": "Actions"
+        }
+    }
+}

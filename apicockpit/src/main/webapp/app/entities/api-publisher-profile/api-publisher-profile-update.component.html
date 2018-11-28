@@ -1,0 +1,79 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-api-publisher-profile-heading" jhiTranslate="apicockpitApp.apiPublisherProfile.home.createOrEditLabel">Create or edit a Api Publisher Profile</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!apiPublisherProfile.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="apiPublisherProfile.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="apicockpitApp.apiPublisherProfile.name" for="field_name">Name</label>
+                    <input type="text" class="form-control" name="name" id="field_name"
+                        [(ngModel)]="apiPublisherProfile.name" required/>
+                    <div [hidden]="!(editForm.controls.name?.dirty && editForm.controls.name?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.name?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="apicockpitApp.apiPublisherProfile.active" for="field_active">Active</label>
+                    <input type="checkbox" class="form-control" name="active" id="field_active"
+                        [(ngModel)]="apiPublisherProfile.active" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="apicockpitApp.apiPublisherProfile.apiBaseUrl" for="field_apiBaseUrl">Api Base Url</label>
+                    <input type="text" class="form-control" name="apiBaseUrl" id="field_apiBaseUrl"
+                        [(ngModel)]="apiPublisherProfile.apiBaseUrl" required/>
+                    <div [hidden]="!(editForm.controls.apiBaseUrl?.dirty && editForm.controls.apiBaseUrl?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.apiBaseUrl?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="apicockpitApp.apiPublisherProfile.apiDocUrl" for="field_apiDocUrl">Api Doc Url</label>
+                    <input type="text" class="form-control" name="apiDocUrl" id="field_apiDocUrl"
+                        [(ngModel)]="apiPublisherProfile.apiDocUrl" required/>
+                    <div [hidden]="!(editForm.controls.apiDocUrl?.dirty && editForm.controls.apiDocUrl?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.apiDocUrl?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="apicockpitApp.apiPublisherProfile.dateCreated" for="field_dateCreated">Date Created</label>
+                    <div class="d-flex">
+                        <input id="field_dateCreated" type="datetime-local" class="form-control" name="dateCreated" [(ngModel)]="dateCreated"
+                        required/>
+                    </div>
+                    <div [hidden]="!(editForm.controls.dateCreated?.dirty && editForm.controls.dateCreated?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.dateCreated?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                            [hidden]="!editForm.controls.dateCreated?.errors?.ZonedDateTimelocal" jhiTranslate="entity.validation.ZonedDateTimelocal">
+                            This field should be a date and time.
+                        </small>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

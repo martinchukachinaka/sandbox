@@ -1,0 +1,47 @@
+{
+    "name": "PlatformUser",
+    "fields": [
+        {
+            "fieldName": "phoneNumber",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "user",
+            "otherEntityName": "user",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "platformUser"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "apiPublisherProfile",
+            "otherEntityName": "apiPublisherProfile",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "platformUser"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "apiConsumerProfile",
+            "otherEntityName": "apiConsumerProfile",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "platformUser"
+        }
+    ],
+    "changelogDate": "20181124182209",
+    "entityTableName": "platform_user",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

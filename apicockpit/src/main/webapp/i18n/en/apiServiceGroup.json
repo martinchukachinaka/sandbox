@@ -1,0 +1,24 @@
+{
+    "apicockpitApp": {
+        "apiServiceGroup": {
+            "home": {
+                "title": "Api Service Groups",
+                "createLabel": "Create a new Api Service Group",
+                "createOrEditLabel": "Create or edit a Api Service Group"
+            },
+            "created": "A new Api Service Group is created with identifier {{ param }}",
+            "updated": "A Api Service Group is updated with identifier {{ param }}",
+            "deleted": "A Api Service Group is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Api Service Group {{ id }}?"
+            },
+            "detail": {
+                "title": "Api Service Group"
+            },
+            "name": "Name",
+            "description": "Description",
+            "availableServices": "Available Services",
+            "owner": "Owner"
+        }
+    }
+}

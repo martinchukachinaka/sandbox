@@ -1,0 +1,41 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="apiConsumerProfile">
+            <h2><span jhiTranslate="apicockpitApp.apiConsumerProfile.detail.title">Api Consumer Profile</span> {{apiConsumerProfile.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="apicockpitApp.apiConsumerProfile.name">Name</span></dt>
+                <dd>
+                    <span>{{apiConsumerProfile.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.apiConsumerProfile.active">Active</span></dt>
+                <dd>
+                    <span>{{apiConsumerProfile.active}}</span>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.apiConsumerProfile.dateCreated">Date Created</span></dt>
+                <dd>
+                    <span>{{apiConsumerProfile.dateCreated}}</span>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.apiConsumerProfile.owner">Owner</span></dt>
+                <dd>
+                    <div *ngIf="apiConsumerProfile.ownerId">
+                        <a [routerLink]="['/api-publisher-profile', apiConsumerProfile.ownerId, 'view']">{{apiConsumerProfile.ownerName}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/api-consumer-profile', apiConsumerProfile.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

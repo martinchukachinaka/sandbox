@@ -1,0 +1,53 @@
+{
+    "name": "ApiConsumerProfile",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "active",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "Instant",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "projects",
+            "otherEntityName": "apiProject",
+            "otherEntityRelationshipName": "owner"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "platformUser",
+            "otherEntityName": "platformUser",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "apiConsumerProfile"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "owner",
+            "otherEntityName": "apiPublisherProfile",
+            "otherEntityField": "name"
+        }
+    ],
+    "changelogDate": "20181124182211",
+    "entityTableName": "api_consumer_profile",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

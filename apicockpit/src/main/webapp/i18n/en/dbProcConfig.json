@@ -1,0 +1,26 @@
+{
+    "apicockpitApp": {
+        "dbProcConfig": {
+            "home": {
+                "title": "Db Proc Configs",
+                "createLabel": "Create a new Db Proc Config",
+                "createOrEditLabel": "Create or edit a Db Proc Config"
+            },
+            "created": "A new Db Proc Config is created with identifier {{ param }}",
+            "updated": "A Db Proc Config is updated with identifier {{ param }}",
+            "deleted": "A Db Proc Config is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Db Proc Config {{ id }}?"
+            },
+            "detail": {
+                "title": "Db Proc Config"
+            },
+            "name": "Name",
+            "description": "Description",
+            "active": "Active",
+            "dateCreated": "Date Created",
+            "pScript": "P Script",
+            "config": "Config"
+        }
+    }
+}
