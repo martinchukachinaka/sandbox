@@ -56,3 +56,13 @@
     </div>
 
 </div>
+
+<swal
+    #confirmUnsavedChanges
+    title="Confirm"
+    text="You have unsaved changes. Leaving this page means losing those changes. Do you want to continue?"
+    type="info"
+    [showCancelButton]="true"
+    [focusCancel]="true"
+    (confirm)="leavePage()">
+></swal>

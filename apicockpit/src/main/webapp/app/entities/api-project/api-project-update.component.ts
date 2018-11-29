@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpResponse, HttpErrorResponse } from '@angular/common/http';
 import { Observable } from 'rxjs';
@@ -15,11 +15,13 @@ import { ApiProjectServiceService } from 'app/entities/api-project-service';
 import { IApiConsumerProfile } from 'app/shared/model/api-consumer-profile.model';
 import { ApiConsumerProfileService } from 'app/entities/api-consumer-profile';
 
+import { UnsavedChangesGuard } from 'app/shared/guard/unsavedChangesGuard';
+
 @Component({
     selector: 'jhi-api-project-update',
     templateUrl: './api-project-update.component.html'
 })
-export class ApiProjectUpdateComponent implements OnInit {
+export class ApiProjectUpdateComponent implements OnInit, UnsavedChangesGuard {
     apiProject: IApiProject;
     isSaving: boolean;
 
@@ -29,6 +31,9 @@ export class ApiProjectUpdateComponent implements OnInit {
 
     apiconsumerprofiles: IApiConsumerProfile[];
     dateCreated: string;
+
+    @ViewChild('confirmUnsavedChanges')
+    confirmChangesPrompt;
 
     constructor(
         private jhiAlertService: JhiAlertService,
@@ -125,5 +130,13 @@ export class ApiProjectUpdateComponent implements OnInit {
             }
         }
         return option;
+    }
+
+    canDeactivate() {
+        if (!true) {
+            return true;
+        } else {
+            this.confirmChangesPrompt.show();
+        }
     }
 }
