@@ -38,7 +38,7 @@ export const apiProjectRoute: Routes = [
             pagingParams: JhiResolvePagingParams
         },
         data: {
-            // authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER'],
             defaultSort: 'id,asc',
             pageTitle: 'apicockpitApp.apiProject.home.title'
         },
@@ -51,7 +51,7 @@ export const apiProjectRoute: Routes = [
             apiProject: ApiProjectResolve
         },
         data: {
-            // authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER'],
             pageTitle: 'apicockpitApp.apiProject.home.title'
         },
         canActivate: [UserRouteAccessService]
@@ -63,11 +63,11 @@ export const apiProjectRoute: Routes = [
             apiProject: ApiProjectResolve
         },
         data: {
-            // authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER'],
             pageTitle: 'apicockpitApp.apiProject.home.title'
         },
-        canActivate: [UserRouteAccessService],
-        canDeactivate: [UnsavedChangesGuard]
+        canActivate: [UserRouteAccessService]
+        // canDeactivate: [UnsavedChangesGuard]
     },
     {
         path: 'api-project/:id/edit',
@@ -76,7 +76,7 @@ export const apiProjectRoute: Routes = [
             apiProject: ApiProjectResolve
         },
         data: {
-            // authorities: ['ROLE_USER'],
+            authorities: ['ROLE_USER'],
             pageTitle: 'apicockpitApp.apiProject.home.title'
         },
         canActivate: [UserRouteAccessService]
