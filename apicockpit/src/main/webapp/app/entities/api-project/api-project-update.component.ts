@@ -19,7 +19,8 @@ import { UnsavedChangesGuard } from 'app/shared/guard/unsavedChangesGuard';
 
 @Component({
     selector: 'jhi-api-project-update',
-    templateUrl: './api-project-update.component.html'
+    templateUrl: './api-project-update.component.html',
+    styleUrls: ['./api-project-update.component.scss']
 })
 export class ApiProjectUpdateComponent implements OnInit, UnsavedChangesGuard {
     apiProject: IApiProject;
@@ -34,6 +35,8 @@ export class ApiProjectUpdateComponent implements OnInit, UnsavedChangesGuard {
 
     @ViewChild('confirmUnsavedChanges')
     confirmChangesPrompt;
+
+    selectedApis = [];
 
     constructor(
         private jhiAlertService: JhiAlertService,
@@ -77,6 +80,8 @@ export class ApiProjectUpdateComponent implements OnInit, UnsavedChangesGuard {
             },
             (res: HttpErrorResponse) => this.onError(res.message)
         );
+        console.log('apis = ', this.apiProject.apis);
+        console.log('api project= ', this.apiProject);
     }
 
     previousState() {
@@ -122,6 +127,7 @@ export class ApiProjectUpdateComponent implements OnInit, UnsavedChangesGuard {
     }
 
     getSelected(selectedVals: Array<any>, option: any) {
+        this.apiProject.apis = this.apiProject.apis ? this.apiProject.apis : [];
         if (selectedVals) {
             for (let i = 0; i < selectedVals.length; i++) {
                 if (option.id === selectedVals[i].id) {
@@ -129,7 +135,15 @@ export class ApiProjectUpdateComponent implements OnInit, UnsavedChangesGuard {
                 }
             }
         }
+        this.apiProject.apis.push(option);
+        this.selectedApis.push(option);
+        console.log(this.apiProject.apis);
         return option;
+    }
+
+    removeApi(apiOption) {
+        const index = this.apiProject.apis.findIndex(api => apiOption.id === api.id);
+        this.apiProject.apis.splice(index, 1);
     }
 
     canDeactivate() {
