@@ -10,7 +10,14 @@
       "architect": {
           "build": {
               "options": {
-                  "styles": []
+                  "styles": [
+                    "node_modules/selectize/dist/css/selectize.css",
+                    "node_modules/selectize/dist/css/selectize.{your chosen theme}.css"
+                  ],
+                  "scripts": [
+                    "node_modules/jquery/dist/jquery.min.js",
+                    "node_modules/ng-selectize/selectize/selectize.standalone.js"
+                  ]
               }
           }
       }
