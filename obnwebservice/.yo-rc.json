@@ -1,0 +1,37 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.apifuze.obn.webservice",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "5.6.1",
+    "applicationType": "microservice",
+    "baseName": "obnwebservice",
+    "packageName": "com.apifuze.obn.webservice",
+    "packageFolder": "com/apifuze/obn/webservice",
+    "serverPort": "8081",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "MjBiMzNmZWViODcyNWIyMzM3ZDNkM2Q3ODA3MjJlNmNhZDFlYzNlOTc5MzIyZjFkMjEzZTcxMDQwOTM3NGI0NGU2NmFhMjI2YmM5NzExNDkyMTExOTk2MTI3YWMzNTI4MTRlY2FjNjI2MmExMmY4NzQ1YWRkZTdlM2E0MzBhMTE=",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "enableTranslation": true,
+    "clientPackageManager": "npm",
+    "nativeLanguage": "en",
+    "languages": [
+      "en"
+    ],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
