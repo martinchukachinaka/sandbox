@@ -21,6 +21,7 @@ import * as moment from 'moment';
 import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent, ActiveMenuDirective, ErrorComponent } from './layouts';
 import { SweetAlert2Module } from '@toverux/ngx-sweetalert2';
 import { SidebarComponent } from './layouts/sidebar/sidebar.component';
+import { DashboardComponent } from './layouts/dashboard/dashboard.component';
 
 @NgModule({
     imports: [
@@ -42,7 +43,8 @@ import { SidebarComponent } from './layouts/sidebar/sidebar.component';
         PageRibbonComponent,
         ActiveMenuDirective,
         FooterComponent,
-        SidebarComponent
+        SidebarComponent,
+        DashboardComponent
     ],
     providers: [
         {

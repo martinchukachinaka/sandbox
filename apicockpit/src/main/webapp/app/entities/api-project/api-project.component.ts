@@ -10,6 +10,7 @@ import { Principal } from 'app/core';
 import { ITEMS_PER_PAGE } from 'app/shared';
 import { ApiProjectService } from './api-project.service';
 
+import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 @Component({
     selector: 'jhi-api-project',
     templateUrl: './api-project.component.html'
@@ -29,6 +30,8 @@ export class ApiProjectComponent implements OnInit, OnDestroy {
     predicate: any;
     previousPage: any;
     reverse: any;
+    closeResult: string;
+    apiProjectDetail: IApiProject;
 
     constructor(
         private apiProjectService: ApiProjectService,
@@ -37,7 +40,8 @@ export class ApiProjectComponent implements OnInit, OnDestroy {
         private principal: Principal,
         private activatedRoute: ActivatedRoute,
         private router: Router,
-        private eventManager: JhiEventManager
+        private eventManager: JhiEventManager,
+        private modalService: NgbModal
     ) {
         this.itemsPerPage = ITEMS_PER_PAGE;
         this.routeData = this.activatedRoute.data.subscribe(data => {
@@ -91,6 +95,14 @@ export class ApiProjectComponent implements OnInit, OnDestroy {
         this.loadAll();
     }
 
+    getApiProject(id: number, content) {
+        this.apiProjectService.find(id).subscribe(result => {
+            this.apiProjectDetail = result.body;
+            console.log(this.apiProjectDetail);
+            this.modalService.open(content);
+        });
+    }
+
     ngOnInit() {
         this.loadAll();
         this.principal.identity().then(account => {
@@ -117,6 +129,27 @@ export class ApiProjectComponent implements OnInit, OnDestroy {
             result.push('id');
         }
         return result;
+    }
+
+    open(content) {
+        this.modalService.open(content, { ariaLabelledBy: 'modal-basic-title' }).result.then(
+            result => {
+                this.closeResult = `Closed with: ${result}`;
+            },
+            reason => {
+                this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+            }
+        );
+    }
+
+    private getDismissReason(reason: any): string {
+        if (reason === ModalDismissReasons.ESC) {
+            return 'by pressing ESC';
+        } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
+            return 'by clicking on a backdrop';
+        } else {
+            return `with: ${reason}`;
+        }
     }
 
     private paginateApiProjects(data: IApiProject[], headers: HttpHeaders) {

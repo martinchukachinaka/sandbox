@@ -1,14 +1,14 @@
 <div class="row justify-content-center">
-        <div class="col-8">
+        <div class="col-8 card apiProject--container">
             <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
                 <h2 id="jhi-api-project-heading" jhiTranslate="apicockpitApp.apiProject.home.createOrEditLabel">New Project</h2>
                 <div>
                     <jhi-alert-error></jhi-alert-error>
-                    <div class="form-group" [hidden]="!apiProject.id">
+                    <!-- <div class="form-group" [hidden]="!apiProject.id">
                         <label for="id" jhiTranslate="global.field.id">ID</label>
                         <input type="text" class="form-control" id="id" name="id"
                             [(ngModel)]="apiProject.id" readonly />
-                    </div>
+                    </div> -->
                     <div class="form-group">
                         <label class="form-control-label" jhiTranslate="apicockpitApp.apiProject.name" for="field_name">Name</label>
                         <input type="text" class="form-control" name="name" id="field_name"
@@ -22,13 +22,22 @@
                     </div>
                     <div class="form-group">
                         <label class="form-control-label" jhiTranslate="apicockpitApp.apiProject.description" for="field_description">Description</label>
-                        <input type="text" class="form-control" name="description" id="field_description"
-                            [(ngModel)]="apiProject.description" />
+                        <textarea class="form-control" name="description" id="field_description"
+                            [(ngModel)]="apiProject.description"></textarea>
                     </div>
                     <div class="form-group">
-                        <label class="form-control-label" jhiTranslate="apicockpitApp.apiProject.active" for="field_active">Active</label>
-                        <input type="checkbox" class="form-control" name="active" id="field_active"
-                            [(ngModel)]="apiProject.active" />
+                        <!-- <label class="form-control-label" jhiTranslate="apicockpitApp.apiProject.active" for="field_active">Active -->
+
+                        <!-- </label> -->
+
+                        <!-- <input type="checkbox" class="form-control" name="active" id="field_active"
+                            [(ngModel)]="apiProject.active" /> -->
+                            <label class="form-control-label" jhiTranslate="apicockpitApp.apiProject.active" for="field_active">Active</label>
+                            <label class="switch">
+                                Active
+                                <input type="checkbox" name="active" id="field_active" [(ngModel)]="apiProject.active" >
+                                <span class="slider round"></span>
+                            </label>
                     </div>
                     <div class="form-group">
                         <label jhiTranslate="apicockpitApp.apiProject.api" for="field_api">Api</label>
