@@ -20,6 +20,7 @@ Navbar
     .dropdown-item.active:focus,
     .dropdown-item.active:hover {
         background-color: #353d47;
+        border-radius: 0;
     }
     .dropdown-toggle::after {
         margin-left: 0.15em;
