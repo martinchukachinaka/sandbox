@@ -8,7 +8,14 @@ Navbar
 }
 
 .jh-navbar {
-    background-color: #353d47;
+    * {
+        color: #66615b !important;
+    }
+
+    background-color: transparent;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
     padding: 0.2em 1em;
     .profile-image {
         margin: -10px 0px;
