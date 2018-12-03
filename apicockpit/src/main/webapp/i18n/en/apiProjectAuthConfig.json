@@ -1,0 +1,25 @@
+{
+    "apicockpitApp": {
+        "apiProjectAuthConfig": {
+            "home": {
+                "title": "Api Project Auth Configs",
+                "createLabel": "Create a new Api Project Auth Config",
+                "createOrEditLabel": "Create or edit a Api Project Auth Config"
+            },
+            "created": "A new Api Project Auth Config is created with identifier {{ param }}",
+            "updated": "A Api Project Auth Config is updated with identifier {{ param }}",
+            "deleted": "A Api Project Auth Config is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Api Project Auth Config {{ id }}?"
+            },
+            "detail": {
+                "title": "Api Project Auth Config"
+            },
+            "clientId": "Client Id",
+            "clientSecret": "Client Secret",
+            "active": "Active",
+            "dateCreated": "Date Created",
+            "project": "Project"
+        }
+    }
+}

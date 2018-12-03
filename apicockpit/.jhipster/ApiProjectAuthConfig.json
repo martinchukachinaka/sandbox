@@ -1,0 +1,42 @@
+{
+    "name": "ApiProjectAuthConfig",
+    "fields": [
+        {
+            "fieldName": "clientId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "clientSecret",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "active",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "Instant",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "project",
+            "otherEntityName": "apiProject",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "apiKey"
+        }
+    ],
+    "changelogDate": "20181124182216",
+    "entityTableName": "api_project_auth_config",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

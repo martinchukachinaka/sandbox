@@ -1,0 +1,26 @@
+{
+    "apicockpitApp": {
+        "grovyProcConfig": {
+            "home": {
+                "title": "Grovy Proc Configs",
+                "createLabel": "Create a new Grovy Proc Config",
+                "createOrEditLabel": "Create or edit a Grovy Proc Config"
+            },
+            "created": "A new Grovy Proc Config is created with identifier {{ param }}",
+            "updated": "A Grovy Proc Config is updated with identifier {{ param }}",
+            "deleted": "A Grovy Proc Config is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Grovy Proc Config {{ id }}?"
+            },
+            "detail": {
+                "title": "Grovy Proc Config"
+            },
+            "name": "Name",
+            "description": "Description",
+            "active": "Active",
+            "dateCreated": "Date Created",
+            "pScript": "P Script",
+            "config": "Config"
+        }
+    }
+}

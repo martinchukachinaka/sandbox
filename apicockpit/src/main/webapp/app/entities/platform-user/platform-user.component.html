@@ -1,0 +1,70 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="apicockpitApp.platformUser.home.title">Platform Users</span>
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-platform-user" [routerLink]="['/platform-user/new']">
+            <fa-icon [icon]="'plus'"></fa-icon>
+            <span  jhiTranslate="apicockpitApp.platformUser.home.createLabel">
+            Create new Platform User
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <br/>
+    <div class="table-responsive" *ngIf="platformUsers">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+            <th><span jhiTranslate="global.field.id">ID</span></th>
+            <th><span jhiTranslate="apicockpitApp.platformUser.phoneNumber">Phone Number</span></th>
+            <th><span jhiTranslate="apicockpitApp.platformUser.user">User</span></th>
+            <th><span jhiTranslate="apicockpitApp.platformUser.apiPublisherProfile">Api Publisher Profile</span></th>
+            <th><span jhiTranslate="apicockpitApp.platformUser.apiConsumerProfile">Api Consumer Profile</span></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let platformUser of platformUsers ;trackBy: trackId">
+                <td><a [routerLink]="['/platform-user', platformUser.id, 'view' ]">{{platformUser.id}}</a></td>
+                <td>{{platformUser.phoneNumber}}</td>
+                <td>
+                    {{platformUser.userId}}
+                </td>
+                <td>
+                    <div *ngIf="platformUser.apiPublisherProfileId">
+                        <a [routerLink]="['../api-publisher-profile', platformUser.apiPublisherProfileId , 'view' ]" >{{platformUser.apiPublisherProfileId}}</a>
+                    </div>
+                </td>
+                <td>
+                    <div *ngIf="platformUser.apiConsumerProfileId">
+                        <a [routerLink]="['../api-consumer-profile', platformUser.apiConsumerProfileId , 'view' ]" >{{platformUser.apiConsumerProfileId}}</a>
+                    </div>
+                </td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['/platform-user', platformUser.id, 'view' ]"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/platform-user', platformUser.id, 'edit']"
+                                class="btn btn-primary btn-sm">
+                            <fa-icon [icon]="'pencil-alt'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'platform-user/'+ platformUser.id + '/delete'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-danger btn-sm">
+                            <fa-icon [icon]="'times'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

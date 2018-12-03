@@ -1,0 +1,70 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="apicockpitApp.apiServiceGroup.home.title">Api Service Groups</span>
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-api-service-group" [routerLink]="['/api-service-group/new']">
+            <fa-icon [icon]="'plus'"></fa-icon>
+            <span  jhiTranslate="apicockpitApp.apiServiceGroup.home.createLabel">
+            Create new Api Service Group
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <br/>
+    <div class="table-responsive" *ngIf="apiServiceGroups">
+        <table class="table table-striped">
+            <thead>
+            <tr jhiSort [(predicate)]="predicate" [(ascending)]="reverse" [callback]="transition.bind(this)">
+            <th jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="name"><span jhiTranslate="apicockpitApp.apiServiceGroup.name">Name</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="description"><span jhiTranslate="apicockpitApp.apiServiceGroup.description">Description</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="ownerName"><span jhiTranslate="apicockpitApp.apiServiceGroup.owner">Owner</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let apiServiceGroup of apiServiceGroups ;trackBy: trackId">
+                <td><a [routerLink]="['/api-service-group', apiServiceGroup.id, 'view' ]">{{apiServiceGroup.id}}</a></td>
+                <td>{{apiServiceGroup.name}}</td>
+                <td>{{apiServiceGroup.description}}</td>
+                <td>
+                    <div *ngIf="apiServiceGroup.ownerId">
+                        <a [routerLink]="['../api-publisher-profile', apiServiceGroup.ownerId , 'view' ]" >{{apiServiceGroup.ownerName}}</a>
+                    </div>
+                </td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['/api-service-group', apiServiceGroup.id, 'view' ]"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/api-service-group', apiServiceGroup.id, 'edit']"
+                                class="btn btn-primary btn-sm">
+                            <fa-icon [icon]="'pencil-alt'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'api-service-group/'+ apiServiceGroup.id + '/delete'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-danger btn-sm">
+                            <fa-icon [icon]="'times'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div *ngIf="apiServiceGroups && apiServiceGroups.length">
+        <div class="row justify-content-center">
+            <jhi-item-count [page]="page" [total]="queryCount" [maxSize]="5" [itemsPerPage]="itemsPerPage"></jhi-item-count>
+        </div>
+        <div class="row justify-content-center">
+            <ngb-pagination [collectionSize]="totalItems" [(page)]="page" [pageSize]="itemsPerPage" [maxSize]="5" [rotate]="true" [boundaryLinks]="true" (pageChange)="loadPage(page)"></ngb-pagination>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="apiServiceGroup">
+            <h2><span jhiTranslate="apicockpitApp.apiServiceGroup.detail.title">Api Service Group</span> {{apiServiceGroup.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="apicockpitApp.apiServiceGroup.name">Name</span></dt>
+                <dd>
+                    <span>{{apiServiceGroup.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.apiServiceGroup.description">Description</span></dt>
+                <dd>
+                    <span>{{apiServiceGroup.description}}</span>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.apiServiceGroup.owner">Owner</span></dt>
+                <dd>
+                    <div *ngIf="apiServiceGroup.ownerId">
+                        <a [routerLink]="['/api-publisher-profile', apiServiceGroup.ownerId, 'view']">{{apiServiceGroup.ownerName}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/api-service-group', apiServiceGroup.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

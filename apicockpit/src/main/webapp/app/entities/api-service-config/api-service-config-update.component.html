@@ -1,0 +1,102 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-api-service-config-heading" jhiTranslate="apicockpitApp.apiServiceConfig.home.createOrEditLabel">Create or edit a Api Service Config</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!apiServiceConfig.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="apiServiceConfig.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="apicockpitApp.apiServiceConfig.name" for="field_name">Name</label>
+                    <input type="text" class="form-control" name="name" id="field_name"
+                        [(ngModel)]="apiServiceConfig.name" required/>
+                    <div [hidden]="!(editForm.controls.name?.dirty && editForm.controls.name?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.name?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="apicockpitApp.apiServiceConfig.code" for="field_code">Code</label>
+                    <input type="text" class="form-control" name="code" id="field_code"
+                        [(ngModel)]="apiServiceConfig.code" required/>
+                    <div [hidden]="!(editForm.controls.code?.dirty && editForm.controls.code?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.code?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="apicockpitApp.apiServiceConfig.description" for="field_description">Description</label>
+                    <input type="text" class="form-control" name="description" id="field_description"
+                        [(ngModel)]="apiServiceConfig.description" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="apicockpitApp.apiServiceConfig.serviceUrl" for="field_serviceUrl">Service Url</label>
+                    <input type="text" class="form-control" name="serviceUrl" id="field_serviceUrl"
+                        [(ngModel)]="apiServiceConfig.serviceUrl" required/>
+                    <div [hidden]="!(editForm.controls.serviceUrl?.dirty && editForm.controls.serviceUrl?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.serviceUrl?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="apicockpitApp.apiServiceConfig.serviceDocUrl" for="field_serviceDocUrl">Service Doc Url</label>
+                    <input type="text" class="form-control" name="serviceDocUrl" id="field_serviceDocUrl"
+                        [(ngModel)]="apiServiceConfig.serviceDocUrl" required/>
+                    <div [hidden]="!(editForm.controls.serviceDocUrl?.dirty && editForm.controls.serviceDocUrl?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.serviceDocUrl?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="apicockpitApp.apiServiceConfig.active" for="field_active">Active</label>
+                    <input type="checkbox" class="form-control" name="active" id="field_active"
+                        [(ngModel)]="apiServiceConfig.active" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="apicockpitApp.apiServiceConfig.dateCreated" for="field_dateCreated">Date Created</label>
+                    <div class="d-flex">
+                        <input id="field_dateCreated" type="datetime-local" class="form-control" name="dateCreated" [(ngModel)]="dateCreated"
+                        required/>
+                    </div>
+                    <div [hidden]="!(editForm.controls.dateCreated?.dirty && editForm.controls.dateCreated?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.dateCreated?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                            [hidden]="!editForm.controls.dateCreated?.errors?.ZonedDateTimelocal" jhiTranslate="entity.validation.ZonedDateTimelocal">
+                            This field should be a date and time.
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="apicockpitApp.apiServiceConfig.serviceGroup" for="field_serviceGroup">Service Group</label>
+                    <select class="form-control" id="field_serviceGroup" name="serviceGroup" [(ngModel)]="apiServiceConfig.serviceGroupId" >
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="apiServiceGroupOption.id" *ngFor="let apiServiceGroupOption of apiservicegroups; trackBy: trackApiServiceGroupById">{{apiServiceGroupOption.name}}</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

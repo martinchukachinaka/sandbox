@@ -1,0 +1,132 @@
+
+
+entity PlatformUser {
+	phoneNumber String required
+}
+
+
+entity ApiPublisherProfile {
+  name String required,
+  active Boolean,
+  apiBaseUrl String required,
+  apiDocUrl String required,
+  dateCreated Instant required
+}
+
+entity ApiConsumerProfile{
+  name String required,
+  active Boolean,
+  dateCreated Instant required
+}
+entity ApiProject {
+	name String required,
+    description String,
+    active Boolean,
+    dateCreated Instant required
+}
+
+/**
+*Service API defination template
+*/
+entity ApiServiceGroup {
+	name String required,
+    description String
+}
+
+entity ApiServiceConfig {
+  name String required,
+  code String required,
+  description String,
+  serviceUrl String required,
+  serviceDocUrl String required,
+  active Boolean,
+  dateCreated Instant required
+}
+
+//Selected service for a paticular project
+//this serves as a link meaning you can
+//activate or deactivate indepent of the main service config
+entity ApiProjectService{
+  active Boolean,
+  name String,//read this from service config
+  dateCreated Instant required
+}
+
+entity ApiProjectAuthConfig {
+	clientId String,
+    clientSecret String
+    active Boolean,
+    dateCreated Instant required
+}
+
+entity ApiSvcProcConfig {
+  name String required,
+  description String,
+  active Boolean,
+  dateCreated Instant required,
+  processorType ProcessorType required,
+  order Integer
+}
+
+entity DbProcConfig {
+  name String required,
+  description String,
+  active Boolean,
+  dateCreated Instant required,
+  pScript String required
+}
+
+entity GrovyProcConfig {
+  name String required,
+  description String,
+  active Boolean,
+  dateCreated Instant required,
+  pScript String required
+}
+
+enum ProcessorType {
+DB,HTTP,GOOVY
+}
+
+relationship OneToOne {
+    PlatformUser {user} to User
+    PlatformUser to ApiPublisherProfile
+    PlatformUser  to ApiConsumerProfile
+	ApiProject{apiKey(clientId)} to ApiProjectAuthConfig {project(name)},
+    DbProcConfig{config(name)} to ApiSvcProcConfig,
+    GrovyProcConfig{config(name)} to ApiSvcProcConfig
+}
+
+relationship OneToMany {
+  ApiPublisherProfile{ConsumerProfiles(name)} to ApiConsumerProfile {owner(name)},
+  ApiPublisherProfile{serviceConfig(name)} to ApiServiceGroup {owner(name)},
+  ApiConsumerProfile{projects(name)} to ApiProject {owner(name)},
+  ApiServiceGroup {availableServices(name)} to ApiServiceConfig {serviceGroup(name)},
+
+}
+
+relationship ManyToOne {
+    ApiSvcProcConfig {serviceConfig(name)}  to ApiServiceConfig {actions}
+    ApiProjectService {serviceConfig(name)} to ApiServiceConfig
+}
+
+relationship ManyToMany {
+	//should be able to select multiple services from poject
+	ApiProject {api(name)} to ApiProjectService
+}
+// Set pagination options
+paginate ApiPublisherProfile, ApiConsumerProfile, ApiProject,
+ApiServiceGroup, ApiServiceConfig, ApiProjectService, ApiProjectAuthConfig with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+dto * with mapstruct
+
+// Set service options to all except few
+//service all with serviceImpl
+service all with serviceClass
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
+
+

@@ -1,0 +1,92 @@
+<div class="row justify-content-center">
+        <div class="col-8 card apiProject--container">
+            <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+                <h2 id="jhi-api-project-heading" jhiTranslate="apicockpitApp.apiProject.home.createOrEditLabel">New Project</h2>
+                <div>
+                    <jhi-alert-error></jhi-alert-error>
+                    <!-- <div class="form-group" [hidden]="!apiProject.id">
+                        <label for="id" jhiTranslate="global.field.id">ID</label>
+                        <input type="text" class="form-control" id="id" name="id"
+                            [(ngModel)]="apiProject.id" readonly />
+                    </div> -->
+                    <div class="form-group">
+                        <label class="form-control-label" jhiTranslate="apicockpitApp.apiProject.name" for="field_name">Name</label>
+                        <input type="text" class="form-control" name="name" id="field_name"
+                            [(ngModel)]="apiProject.name" required/>
+                        <div [hidden]="!(editForm.controls.name?.dirty && editForm.controls.name?.invalid)">
+                            <small class="form-text text-danger"
+                            [hidden]="!editForm.controls.name?.errors?.required" jhiTranslate="entity.validation.required">
+                            This field is required.
+                            </small>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label" jhiTranslate="apicockpitApp.apiProject.description" for="field_description">Description</label>
+                        <textarea class="form-control" name="description" id="field_description"
+                            [(ngModel)]="apiProject.description"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <!-- <label class="form-control-label" jhiTranslate="apicockpitApp.apiProject.active" for="field_active">Active -->
+
+                        <!-- </label> -->
+
+                        <!-- <input type="checkbox" class="form-control" name="active" id="field_active"
+                            [(ngModel)]="apiProject.active" /> -->
+                            <label class="form-control-label" jhiTranslate="apicockpitApp.apiProject.active" for="field_active">Active</label>
+                            <label class="switch">
+                                Active
+                                <input type="checkbox" name="active" id="field_active" [(ngModel)]="apiProject.active" >
+                                <span class="slider round"></span>
+                            </label>
+                    </div>
+                    <div class="form-group">
+                        <label jhiTranslate="apicockpitApp.apiProject.api" for="field_api">Api</label>
+                        <!-- <select class="form-control" id="field_api" multiple name="api" [(ngModel)]="apiProject.apis">
+                            <option [ngValue]="getSelected(apiProject.apis, apiProjectServiceOption)" *ngFor="let apiProjectServiceOption of apiprojectservices; trackBy: trackApiProjectServiceById">{{apiProjectServiceOption.name}}</option>
+                        </select> -->
+                        <div class="selected-apis">
+                            <span class="badge badge-primary" *ngFor="let api of apiProject.apis" (click)="removeApi(api)">
+                                <span [innerText]="api.name"></span>
+                                <a><i class="remove glyphicon glyphicon-remove glyphicon-white"></i></a>
+                            </span>
+                        </div>
+
+                        <div class="card" *ngFor="let apiProjectServiceOption of apiprojectservices; trackBy: trackApiProjectServiceById">
+                            <div class="card-body" style="padding-top:0; padding-bottom:0;">
+                                <span style="vertical-align: middle; top: 50%; transform: translateY(-50%); position: absolute;">
+                                    {{apiProjectServiceOption.name}}
+                                </span>
+                                <button class="btn btn-success float-right" type="button" id="" (click)="getSelected(apiProject.apis, apiProjectServiceOption)">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label" jhiTranslate="apicockpitApp.apiProject.owner" for="field_owner">Owner</label>
+                        <select class="form-control" id="field_owner" name="owner" [(ngModel)]="apiProject.ownerId" >
+                            <option [ngValue]="null"></option>
+                            <option [ngValue]="apiConsumerProfileOption.id" *ngFor="let apiConsumerProfileOption of apiconsumerprofiles; trackBy: trackApiConsumerProfileById">{{apiConsumerProfileOption.name}}</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                        <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                    </button>
+                    <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                        <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <swal
+        #confirmUnsavedChanges
+        title="Confirm"
+        text="You have unsaved changes. Leaving this page means losing those changes. Do you want to continue?"
+        type="info"
+        [showCancelButton]="true"
+        [focusCancel]="true"
+        (confirm)="leavePage()">
+    ></swal>

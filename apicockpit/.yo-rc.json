@@ -1,0 +1,37 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.apifuze.cockpit",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "5.6.1",
+    "applicationType": "monolith",
+    "baseName": "apicockpit",
+    "packageName": "com.apifuze.cockpit",
+    "packageFolder": "com/apifuze/cockpit",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NWI1ODcxMDUwMjhiOTczY2RiZjYxYjgyZjRlNDVkNTM2ZWM4MGIwZjQ2MDE4OGFiMTE3NDUxZTM0OTdkYjJjNTc3MDZiZWY3ODAyNGVhOWNjZTRkMmJlMmJjZjJmZTlmMTYzYWEwMDI4Mjk5NzlkNDkyNGM5NzlhY2IxNTBlNjA=",
+    "clientFramework": "angularX",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "en"
+    ]
+  }
+}

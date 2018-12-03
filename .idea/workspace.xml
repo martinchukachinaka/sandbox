@@ -1,0 +1,1363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5c7cda3f-0696-4311-a4b2-5677e7396a8a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/apicockpit_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/apicockpit_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_carrotsearch_hppc_0_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_hibernate5_2_9_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_hppc_2_9_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_afterburner_2_9_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_25_1_jre.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_197.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mattbertolini_liquibase_slf4j_2_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_papertrail_profiler_1_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_ryantenney_metrics_metrics_spring_3_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_2_7_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_dropwizard_metrics_metrics_annotation_3_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_dropwizard_metrics_metrics_core_3_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_dropwizard_metrics_metrics_healthchecks_3_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_dropwizard_metrics_metrics_jcache_3_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_dropwizard_metrics_metrics_json_3_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_dropwizard_metrics_metrics_jvm_3_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_dropwizard_metrics_metrics_servlet_3_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_dropwizard_metrics_metrics_servlets_3_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_jhipster_jhipster_framework_2_0_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_api_0_10_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_impl_0_10_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_jackson_0_10_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_core_1_0_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_0_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_common_0_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_dropwizard_0_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_servlet_0_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_bean_validators_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_undertow_undertow_core_1_4_26_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_undertow_undertow_servlet_1_4_26_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_undertow_undertow_websockets_jsr_1_4_26_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_cache_cache_api_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_jta_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_9_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_47.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_logstash_logback_logstash_logback_encoder_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_2_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ehcache_ehcache_3_5_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_javax_el_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_17_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_envers_5_2_17_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_jcache_5_2_17_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_jpamodelgen_5_2_17_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_13_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_22_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_annotation_jboss_annotations_api_1_2_spec_1_0_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_websocket_jboss_websocket_api_1_1_spec_1_1_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_xnio_xnio_api_3_3_8_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_xnio_xnio_nio_3_3_8_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_latencyutils_LatencyUtils_2_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_liquibase_liquibase_core_3_5_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_jdk8_1_2_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_processor_1_2_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_loader_tools_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_cache_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_cloud_connectors_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_mail_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_undertow_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_cloudfoundry_connector_2_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_connectors_core_2_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_heroku_connector_2_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_localconfig_connector_2_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_spring_service_connector_2_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_0_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_0_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_data_5_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_test_5_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_zalando_faux_pas_0_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_zalando_jackson_datatype_problem_0_21_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_zalando_problem_0_21_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_zalando_problem_spring_common_0_24_0_RC_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_zalando_problem_spring_web_0_24_0_RC_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_zalando_problem_violations_0_24_0_RC_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apicockpit/src/main/webapp/app/account/register/register.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apicockpit/src/main/webapp/app/layouts/main/main.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apicockpit/src/main/webapp/content/images/bg-home.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apicockpit/src/main/webapp/app/account/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apicockpit/src/main/webapp/app/account/register/register.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apicockpit/src/main/webapp/app/account/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apicockpit/src/main/webapp/app/account/register/register.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apicockpit/src/main/webapp/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apicockpit/src/main/webapp/app/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apicockpit/src/main/webapp/app/home/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/apicockpit/src/main/webapp/app/home/home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apicockpit/src/main/webapp/app/layouts/main/main.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apicockpit/src/main/webapp/app/layouts/main/main.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apicockpit/src/main/webapp/app/layouts/main/main.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apicockpit/src/main/webapp/app/layouts/main/main.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apicockpit/src/main/webapp/i18n/en/home.json" beforeDir="false" afterPath="$PROJECT_DIR$/apicockpit/src/main/webapp/i18n/en/home.json" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/apicockpit/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1331924785">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="3" />
+          <entry key="html" value="19" />
+          <entry key="java" value="1" />
+          <entry key="json" value="2" />
+          <entry key="mvnw" value="1" />
+          <entry key="properties" value="1" />
+          <entry key="scss" value="8" />
+          <entry key="ts" value="31" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="3" />
+          <entry key="HTML" value="19" />
+          <entry key="JAVA" value="1" />
+          <entry key="JSON" value="2" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Properties" value="1" />
+          <entry key="SCSS" value="8" />
+          <entry key="TypeScript" value="31" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="TypeScriptServerServiceImpl" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="150" />
+          <entry key="json" value="75" />
+          <entry key="scss" value="140" />
+          <entry key="ts" value="40" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="150" />
+          <entry key="JSON" value="75" />
+          <entry key="SCSS" value="140" />
+          <entry key="TypeScript" value="40" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.checkout.local" value="1" />
+          <entry key="git.branch.checkout.remote" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/home/home.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/home/home.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/home/home.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#65#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/home/home.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/account/register/register.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/account/register/register.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/account/register/register.component.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="SCSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>dashboard</find>
+      <find>jhi-dash</find>
+      <find>jhi-hom</find>
+      <find>isAuthen</find>
+      <find>Welcome,</find>
+      <find>.main-panel &gt; .content</find>
+      <find>main-panel</find>
+      <find>home.subtitle</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev-mayorkun" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/apicockpit/src/main/webapp/app/layouts/navbar/navbar.component.html" />
+        <option value="$PROJECT_DIR$/apicockpit/src/main/webapp/app/layouts/main/main.component.css" />
+        <option value="$PROJECT_DIR$/apicockpit/src/main/webapp/app/layouts/main/main.component.ts" />
+        <option value="$PROJECT_DIR$/apicockpit/src/main/webapp/app/layouts/main/main.component.scss" />
+        <option value="$PROJECT_DIR$/apicockpit/src/main/webapp/app/layouts/main/main.component.html" />
+        <option value="$PROJECT_DIR$/apicockpit/src/main/webapp/app/home/home.scss" />
+        <option value="$PROJECT_DIR$/apicockpit/src/main/webapp/i18n/en/home.json" />
+        <option value="$PROJECT_DIR$/apicockpit/src/main/webapp/app/home/home.component.html" />
+        <option value="$PROJECT_DIR$/apicockpit/src/main/webapp/app/account/register/register.component.ts" />
+        <option value="$PROJECT_DIR$/apicockpit/src/main/webapp/app/account/register/register.component.html" />
+        <option value="$PROJECT_DIR$/apicockpit/src/main/webapp/app/account/register/register.component.scss" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/apicockpit/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/JSONStream/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/abbrev/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/agent-base/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/agentkeepalive/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/ajv/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/ansi-align/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/ansi-styles/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/ansicolors/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/ansistyles/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/aproba/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/archy/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/are-we-there-yet/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/asap/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/asn1/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/assert-plus/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/asynckit/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/aws-sign2/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/aws4/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/balanced-match/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/bcrypt-pbkdf/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/bin-links/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/block-stream/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/bluebird/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/boxen/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/brace-expansion/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/buffer-from/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/builtin-modules/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/builtins/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/byline/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/byte-size/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/cacache/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/call-limit/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/camelcase/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/capture-stack-trace/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/caseless/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/chalk/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/chownr/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/ci-info/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/cidr-regex/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/cli-boxes/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/cli-columns/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/cli-table3/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/cliui/node_modules/ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/cliui/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/cliui/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/clone/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/cmd-shim/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/co/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/code-point-at/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/color-convert/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/color-name/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/colors/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/columnify/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/combined-stream/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/concat-map/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/concat-stream/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/config-chain/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/configstore/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/console-control-strings/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/copy-concurrently/node_modules/iferr/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/copy-concurrently/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/core-util-is/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/create-error-class/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/cross-spawn/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/crypto-random-string/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/cyclist/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/dashdash/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/debug/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/debuglog/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/decamelize/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/decode-uri-component/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/deep-extend/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/defaults/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/delayed-stream/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/delegates/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/detect-indent/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/detect-newline/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/dezalgo/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/dot-prop/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/dotenv/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/duplexer3/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/duplexify/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/ecc-jsbn/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/editor/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/encoding/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/end-of-stream/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/err-code/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/errno/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/es6-promise/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/es6-promisify/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/escape-string-regexp/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/execa/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/extend/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/extsprintf/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/fast-deep-equal/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/fast-json-stable-stringify/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/figgy-pudding/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/find-npm-prefix/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/find-up/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/flush-write-stream/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/forever-agent/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/form-data/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/from2/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/fs-minipass/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/fs-vacuum/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/fs-write-stream-atomic/node_modules/iferr/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/fs-write-stream-atomic/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/fs.realpath/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/fstream/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/gauge/node_modules/string-width/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/gauge/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/genfun/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/gentle-fs/node_modules/iferr/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/gentle-fs/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/get-caller-file/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/get-stream/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/getpass/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/glob/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/global-dirs/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/got/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/graceful-fs/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/har-schema/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/har-validator/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/has-flag/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/has-unicode/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/hosted-git-info/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/http-cache-semantics/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/http-proxy-agent/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/http-signature/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/https-proxy-agent/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/humanize-ms/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/iconv-lite/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/iferr/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/ignore-walk/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/import-lazy/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/imurmurhash/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/inflight/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/ini/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/init-package-json/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/invert-kv/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/ip-regex/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/ip/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/is-builtin-module/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/is-ci/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/is-cidr/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/is-fullwidth-code-point/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/is-installed-globally/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/is-npm/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/is-obj/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/is-path-inside/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/is-redirect/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/is-retry-allowed/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/is-stream/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/is-typedarray/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/isarray/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/isexe/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/isstream/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/jsbn/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/json-parse-better-errors/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/json-schema-traverse/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/json-schema/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/json-stringify-safe/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/jsonparse/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/jsprim/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/latest-version/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/lazy-property/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/lcid/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/libcipm/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/libnpmhook/node_modules/npm-registry-fetch/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/libnpmhook/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/libnpx/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/locate-path/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/lock-verify/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/lockfile/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/lodash._baseindexof/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/lodash._baseuniq/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/lodash._bindcallback/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/lodash._cacheindexof/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/lodash._createcache/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/lodash._createset/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/lodash._getnative/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/lodash._root/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/lodash.clonedeep/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/lodash.restparam/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/lodash.union/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/lodash.uniq/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/lodash.without/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/lowercase-keys/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/lru-cache/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/make-dir/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/make-fetch-happen/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/meant/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/mem/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/mime-db/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/mime-types/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/mimic-fn/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/minimatch/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/minimist/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/minipass/node_modules/yallist/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/minipass/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/minizlib/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/mississippi/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/mkdirp/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/move-concurrently/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/mute-stream/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/node-fetch-npm/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/node-gyp/node_modules/nopt/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/node-gyp/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/node-gyp/node_modules/tar/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/node-gyp/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/nopt/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/normalize-package-data/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/npm-audit-report/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/npm-bundled/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/npm-cache-filename/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/npm-install-checks/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/npm-lifecycle/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/npm-logical-tree/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/npm-package-arg/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/npm-packlist/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/npm-pick-manifest/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/npm-profile/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/npm-registry-client/node_modules/retry/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/npm-registry-client/node_modules/ssri/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/npm-registry-client/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/npm-registry-fetch/node_modules/cacache/node_modules/mississippi/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/npm-registry-fetch/node_modules/cacache/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/npm-registry-fetch/node_modules/figgy-pudding/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/npm-registry-fetch/node_modules/make-fetch-happen/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/npm-registry-fetch/node_modules/pump/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/npm-registry-fetch/node_modules/smart-buffer/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/npm-registry-fetch/node_modules/socks-proxy-agent/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/npm-registry-fetch/node_modules/socks/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/npm-registry-fetch/node_modules/ssri/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/npm-registry-fetch/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/npm-run-path/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/npm-user-validate/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/npmlog/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/number-is-nan/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/oauth-sign/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/object-assign/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/once/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/opener/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/os-homedir/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/os-locale/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/os-tmpdir/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/osenv/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/p-finally/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/p-limit/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/p-locate/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/p-try/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/package-json/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/pacote/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/parallel-transform/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/path-exists/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/path-is-absolute/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/path-is-inside/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/path-key/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/performance-now/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/pify/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/prepend-http/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/process-nextick-args/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/promise-inflight/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/promise-retry/node_modules/retry/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/promise-retry/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/promzard/example/npm-init/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/promzard/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/proto-list/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/protoduck/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/prr/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/pseudomap/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/psl/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/pump/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/pumpify/node_modules/pump/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/pumpify/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/punycode/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/qrcode-terminal/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/qs/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/query-string/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/qw/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/rc/node_modules/minimist/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/rc/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/read-cmd-shim/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/read-installed/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/read-installed/test/fixtures/extraneous-detected/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/read-installed/test/fixtures/extraneous-dev-dep/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/read-installed/test/fixtures/grandparent-peer-dev/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/read-installed/test/fixtures/grandparent-peer/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/read-installed/test/fixtures/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/read-package-json/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/read-package-tree/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/read/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/readable-stream/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/readdir-scoped-modules/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/registry-auth-token/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/registry-url/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/request/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/require-directory/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/require-main-filename/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/resolve-from/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/retry/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/rimraf/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/run-queue/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/safe-buffer/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/safer-buffer/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/semver-diff/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/set-blocking/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/sha/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/shebang-command/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/shebang-regex/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/signal-exit/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/slash/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/slide/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/smart-buffer/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/socks-proxy-agent/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/socks/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/sorted-object/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/sorted-union-stream/node_modules/from2/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/sorted-union-stream/node_modules/isarray/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/sorted-union-stream/node_modules/readable-stream/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/sorted-union-stream/node_modules/string_decoder/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/sorted-union-stream/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/spdx-correct/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/spdx-exceptions/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/spdx-expression-parse/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/spdx-license-ids/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/sshpk/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/ssri/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/stream-each/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/stream-iterate/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/stream-shift/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/strict-uri-encode/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/string-width/node_modules/ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/string-width/node_modules/is-fullwidth-code-point/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/string-width/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/string-width/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/string_decoder/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/stringify-package/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/strip-eof/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/strip-json-comments/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/supports-color/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/tar/node_modules/yallist/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/tar/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/term-size/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/text-table/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/through/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/through2/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/timed-out/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/tiny-relative-date/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/tough-cookie/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/tunnel-agent/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/tweetnacl/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/typedarray/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/uid-number/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/umask/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/unique-filename/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/unique-slug/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/unique-string/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/unpipe/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/unzip-response/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/update-notifier/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/url-parse-lax/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/util-deprecate/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/util-extend/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/uuid/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/validate-npm-package-license/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/validate-npm-package-name/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/verror/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/wcwidth/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/which-module/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/which/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/wide-align/node_modules/string-width/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/wide-align/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/widest-line/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/worker-farm/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/wrap-ansi/node_modules/string-width/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/wrap-ansi/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/wrappy/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/write-file-atomic/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/xdg-basedir/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/xtend/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/y18n/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/yallist/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/yargs-parser/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/yargs/node_modules/y18n/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/node_modules/yargs/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/node/node_modules/npm/package.json" />
+      <path value="$PROJECT_DIR$/apicockpit/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="829" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sandbox" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sandbox" type="462c0819:PsiDirectoryNode" />
+              <item name="apicockpit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sandbox" type="462c0819:PsiDirectoryNode" />
+              <item name="apicockpit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sandbox" type="462c0819:PsiDirectoryNode" />
+              <item name="apicockpit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sandbox" type="462c0819:PsiDirectoryNode" />
+              <item name="apicockpit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sandbox" type="462c0819:PsiDirectoryNode" />
+              <item name="apicockpit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sandbox" type="462c0819:PsiDirectoryNode" />
+              <item name="apicockpit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sandbox" type="462c0819:PsiDirectoryNode" />
+              <item name="apicockpit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="register" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sandbox" type="462c0819:PsiDirectoryNode" />
+              <item name="apicockpit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sandbox" type="462c0819:PsiDirectoryNode" />
+              <item name="apicockpit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="i18n" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sandbox" type="462c0819:PsiDirectoryNode" />
+              <item name="apicockpit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="i18n" type="462c0819:PsiDirectoryNode" />
+              <item name="en" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="home&#9;FILE&#9;file:///Users/oluwajava/Development/sandbox/apicockpit/src/main/webapp/app/home/home.component.html&#10;regis&#9;null&#9;null&#10;nav&#9;FILE&#9;file:///Users/oluwajava/Development/sandbox/apicockpit/src/main/webapp/app/layouts/navbar/navbar.component.html&#10;side&#9;FILE&#9;file:///Users/oluwajava/Development/sandbox/apicockpit/src/main/webapp/app/layouts/sidebar/sidebar.component.html&#10;dashbo&#9;FILE&#9;file:///Users/oluwajava/Development/sandbox/apicockpit/src/main/webapp/app/layouts/dashboard/dashboard.component.html&#10;activa&#9;null&#9;null&#10;main&#9;FILE&#9;file:///Users/oluwajava/Development/sandbox/apicockpit/src/main/webapp/app/layouts/main/main.component.ts" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543828867340" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/apicockpit/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apicockpit/src/main/webapp/content/images" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="ApicockpitApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="apicockpit" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.apifuze.cockpit.ApicockpitApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5c7cda3f-0696-4311-a4b2-5677e7396a8a" name="Default Changelist" comment="" />
+      <created>1543673679071</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543673679071</updated>
+      <workItem from="1543673681817" duration="1897000" />
+      <workItem from="1543679718738" duration="536000" />
+      <workItem from="1543680709304" duration="5594000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="8027000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1795422" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" sideWeight="0.49928468" weight="0.32891566" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49928468" weight="0.42048192" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007153" side_tool="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49928468" weight="0.32891566" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.048640914" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/resources/.h2.server.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/mvnw">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/java/com/apifuze/cockpit/aop/logging/LoggingAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/home/home.route.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/admin/admin.route.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/polyfills.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/layouts/dashboard/dashboard.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/layouts/sidebar/sidebar.component.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/app.main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/layouts/navbar/navbar.route.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/layouts/profiles/profile.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/layouts/sidebar/sidebar.route.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="42" lean-forward="true" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/core/auth/user-route-access-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/entities/api-project/api-project.route.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="96" column="33" selection-start-line="96" selection-start-column="33" selection-end-line="96" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/account/activate/activate.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/account/activate/activate.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/layouts/navbar/navbar.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/layouts/main/main.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/layouts/sidebar/sidebar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="10" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/layouts/navbar/navbar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="10" column="98" selection-start-line="10" selection-start-column="98" selection-end-line="10" selection-end-column="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/layouts/navbar/navbar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="77" column="1" lean-forward="true" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/layouts/dashboard/dashboard.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/layouts/dashboard/dashboard.route.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/content/css/paper-theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75540">
+          <caret line="5036" column="1" selection-start-line="5036" selection-start-column="1" selection-end-line="5036" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/layouts/main/main.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/layouts/main/main.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="59" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/i18n/en/home.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/home/home.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/home/home.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/account/register/register.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/account/register/register.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/home/home.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/home/home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apicockpit/src/main/webapp/app/account/register/register.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>apicockpit:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>apicockpit</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

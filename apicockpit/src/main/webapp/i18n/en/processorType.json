@@ -1,0 +1,10 @@
+{
+    "apicockpitApp": {
+        "ProcessorType": {
+            "null": "",
+            "DB": "DB",
+            "HTTP": "HTTP",
+            "GOOVY": "GOOVY"
+        }
+    }
+}

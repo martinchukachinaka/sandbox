@@ -1,0 +1,24 @@
+{
+    "apicockpitApp": {
+        "apiProjectService": {
+            "home": {
+                "title": "Api Project Services",
+                "createLabel": "Create a new Api Project Service",
+                "createOrEditLabel": "Create or edit a Api Project Service"
+            },
+            "created": "A new Api Project Service is created with identifier {{ param }}",
+            "updated": "A Api Project Service is updated with identifier {{ param }}",
+            "deleted": "A Api Project Service is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Api Project Service {{ id }}?"
+            },
+            "detail": {
+                "title": "Api Project Service"
+            },
+            "active": "Active",
+            "name": "Name",
+            "dateCreated": "Date Created",
+            "serviceConfig": "Service Config"
+        }
+    }
+}

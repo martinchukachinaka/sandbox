@@ -1,0 +1,57 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="apiProject">
+            <h2><span jhiTranslate="apicockpitApp.apiProject.detail.title">Api Project</span> {{apiProject.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="apicockpitApp.apiProject.name">Name</span></dt>
+                <dd>
+                    <span>{{apiProject.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.apiProject.description">Description</span></dt>
+                <dd>
+                    <span>{{apiProject.description}}</span>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.apiProject.active">Active</span></dt>
+                <dd>
+                    <span>{{apiProject.active}}</span>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.apiProject.dateCreated">Date Created</span></dt>
+                <dd>
+                    <span>{{apiProject.dateCreated}}</span>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.apiProject.apiKey">Api Key</span></dt>
+                <dd>
+                    <div *ngIf="apiProject.apiKeyId">
+                        <a [routerLink]="['/api-project-auth-config', apiProject.apiKeyId, 'view']">{{apiProject.apiKeyClientId}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.apiProject.api">Api</span></dt>
+                <dd>
+                    <span *ngFor="let api of apiProject.apis; let last = last">
+                        <a [routerLink]="['/api-project-service', api?.id, 'view' ]">{{api.name}}</a>{{last ? '' : ', '}}
+                    </span>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.apiProject.owner">Owner</span></dt>
+                <dd>
+                    <div *ngIf="apiProject.ownerId">
+                        <a [routerLink]="['/api-consumer-profile', apiProject.ownerId, 'view']">{{apiProject.ownerName}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/api-project', apiProject.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

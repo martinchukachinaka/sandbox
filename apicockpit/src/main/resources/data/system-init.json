@@ -1,0 +1,459 @@
+{
+    "publisherInfo": {
+        "name": "ABC Bank",
+        "apiBaseUrl": "http://localhost:8080",
+        "apiDocUrl": "http://localhost:8080/doc",
+        "active": true
+    },
+
+    "serviceList": [
+        {
+            "serviceUrl": "http://localhost:8081/account/accountNumber",
+            "name": "Get Account",
+            "description": "Get Account",
+            "active": true,
+            "serviceGroupName": "account"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/account/balance/accountNumber",
+            "name": "Get Account Balance",
+            "description": "Get Account Balance",
+            "active": true,
+            "serviceGroupName": "account"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/account/bvn/bvn",
+            "name": "Get Account By Customer BVN",
+            "description": "Get Account By Customer BVN",
+            "active": true,
+            "serviceGroupName": "account"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/account/getAccountByEmail/email",
+            "name": "Get Account By Email",
+            "description": "Get Account By Email",
+            "active": true,
+            "serviceGroupName": "account"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/account/getAccountByPhone/phone",
+            "name": "Get Account By Phone",
+            "description": "Get Account By Phone",
+            "active": true,
+            "serviceGroupName": "account"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/account/getAccountType",
+            "name": "Get Account Type",
+            "description": "Get Account Type",
+            "active": true,
+            "serviceGroupName": "account"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/account/customer/customerId",
+            "name": "Get Account By Customer Id",
+            "description": "Get Account By Customer Id",
+            "active": true,
+            "serviceGroupName": "account"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/account/open",
+            "name": "Open Account",
+            "description": "Open Account",
+            "active": true,
+            "serviceGroupName": "account"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/account/accountNumber",
+            "name": "Update Account",
+            "description": "Update Account",
+            "active": true,
+            "serviceGroupName": "account"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/account/block",
+            "name": "Block Account",
+            "description": "Block Account",
+            "active": true,
+            "serviceGroupName": "account"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/agencies/",
+            "name": "Get Agencies",
+            "description": "Get Agencies",
+            "active": true,
+            "serviceGroupName": "agencies"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/agencies/agencyId",
+            "name": "Get Agency By Code",
+            "description": "Get Agency By Code",
+            "active": true,
+            "serviceGroupName": "agencies"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/agencies/latitude/latitude/longitude/longitude",
+            "name": "Get Agencies At A Location",
+            "description": "Get Agencies At A Location",
+            "active": true,
+            "serviceGroupName": "agencies"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/atm/getATM/atmTerminalId",
+            "name": "Get ATM",
+            "description": "Get ATM",
+            "active": true,
+            "serviceGroupName": "atm"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/atm/getATMs",
+            "name": "Get ATMs",
+            "description": "Get ATMs",
+            "active": true,
+            "serviceGroupName": "atm"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/atm/getATMsByBranch/branchCode",
+            "name": "Get ATMs By Branch",
+            "description": "Get ATMs By Branch",
+            "active": true,
+            "serviceGroupName": "atm"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/atm/getATMsNearLocation/latitude?longitude=longitude",
+            "name": "Get ATMs Near Location",
+            "description": "Get ATMs Near Location",
+            "active": true,
+            "serviceGroupName": "atm"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/billpayment/getBillPaymentItem",
+            "name": "GetBillPaymentItem",
+            "description": "GetBillPaymentItem",
+            "active": true,
+            "serviceGroupName": "billpayment"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/billpayment/getBillerCategories",
+            "name": "GetBillerCategories",
+            "description": "GetBillerCategories",
+            "active": true,
+            "serviceGroupName": "billpayment"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/billpayment/getBillers",
+            "name": "GetBillers",
+            "description": "GetBillers",
+            "active": true,
+            "serviceGroupName": "billpayment"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/billpayment/getBillingSystem",
+            "name": "GetBillingSystem",
+            "description": "GetBillingSystem",
+            "active": true,
+            "serviceGroupName": "billpayment"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/card/getCardLimit",
+            "name": "Get Card Limit",
+            "description": "Get Card Limit",
+            "active": true,
+            "serviceGroupName": "card"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/card/getCardProductByBank",
+            "name": "Get Card Product By Bank",
+            "description": "Get Card Product By Bank",
+            "active": true,
+            "serviceGroupName": "card"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/card/getCards/accountNumber",
+            "name": "Get Cards",
+            "description": "Get Cards",
+            "active": true,
+            "serviceGroupName": "card"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/card/requestCard/cardToken",
+            "name": "Request Card",
+            "description": "Request Card",
+            "active": true,
+            "serviceGroupName": "card"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/card/getCardLimit",
+            "name": "Set Card Limit",
+            "description": "Set Card Limit",
+            "active": true,
+            "serviceGroupName": "card"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/customer/block?customerId=customerId",
+            "name": "Block",
+            "description": "Block",
+            "active": true,
+            "serviceGroupName": "customer"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/customer/getByBVN/bvn",
+            "name": "Get By BVN",
+            "description": "Get By BVN",
+            "active": true,
+            "serviceGroupName": "customer"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/customer/getByCustomerId/customerId",
+            "name": "Get By CustomerId",
+            "description": "Get By CustomerId",
+            "active": true,
+            "serviceGroupName": "customer"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/customer/getByEmail/email",
+            "name": "Get By Email",
+            "description": "Get By Email",
+            "active": true,
+            "serviceGroupName": "customer"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/customer/getByPhoneNumber/phoneNumber",
+            "name": "Get By Phone Number",
+            "description": "Get By Phone Number",
+            "active": true,
+            "serviceGroupName": "customer"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/customer/update",
+            "name": "Update Customer Information",
+            "description": "Update Customer Information",
+            "active": true,
+            "serviceGroupName": "customer"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/direct_debit/cancelDirectDebit/referenceId?cancelationReason=cancelationReason",
+            "name": "Cancel  Direct Debit",
+            "description": "Cancel  Direct Debit",
+            "active": true,
+            "serviceGroupName": "direct_debit"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/direct_debit/getDirectDebit/referenceNumber?accountNumber=accountNumber",
+            "name": "Get  Direct Debit",
+            "description": "Get  Direct Debit",
+            "active": true,
+            "serviceGroupName": "direct_debit"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/direct_debit/setupDirectDebit",
+            "name": "Setup Direct Debit",
+            "description": "Setup Direct Debit",
+            "active": true,
+            "serviceGroupName": "direct_debit"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/investment/bookInvestment",
+            "name": "Book Investment",
+            "description": "Book Investment",
+            "active": true,
+            "serviceGroupName": "investment"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/investment/getInvestment/accountNumberOrCustomerId",
+            "name": "Get Investment",
+            "description": "Get Investment",
+            "active": true,
+            "serviceGroupName": "investment"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/investment/getInvestmentProduct",
+            "name": "Get Investment Product",
+            "description": "Get Investment Product",
+            "active": true,
+            "serviceGroupName": "investment"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/general/getBankMeta",
+            "name": "Get Bank Meta",
+            "description": "Get Bank Meta",
+            "active": true,
+            "serviceGroupName": "general"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/general/getCharges",
+            "name": "Get Charges",
+            "description": "Get Charges",
+            "active": true,
+            "serviceGroupName": "general"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/general/getInterfaceVersion",
+            "name": "Get Interface Version",
+            "description": "Get Interface Version",
+            "active": true,
+            "serviceGroupName": "general"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/general/getProducts",
+            "name": "Get Products",
+            "description": "Get Products",
+            "active": true,
+            "serviceGroupName": "general"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/transaction/getHold/accountNumber?holdReferenceId=holdReferenceId",
+            "name": "GetHold",
+            "description": "GetHold",
+            "active": true,
+            "serviceGroupName": "transaction"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/transaction/getStatement",
+            "name": "GetStatement",
+            "description": "GetStatement",
+            "active": true,
+            "serviceGroupName": "transaction"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/transaction/multipleTransferOtherBank",
+            "name": "MultipleTransferOtherBank",
+            "description": "MultipleTransferOtherBank",
+            "active": true,
+            "serviceGroupName": "transaction"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/transaction/multipleTransferToEmail",
+            "name": "MultipleTransferToEmail",
+            "description": "MultipleTransferToEmail",
+            "active": true,
+            "serviceGroupName": "transaction"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/transaction/multipleTransferToPhone",
+            "name": "MultipleTransferToPhone",
+            "description": "MultipleTransferToPhone",
+            "active": true,
+            "serviceGroupName": "transaction"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/transaction/multipleTransferWithinBank",
+            "name": "MultipleTransferWithinBank",
+            "description": "MultipleTransferWithinBank",
+            "active": true,
+            "serviceGroupName": "transaction"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/transaction/placeHold",
+            "name": "PlaceHold",
+            "description": "PlaceHold",
+            "active": true,
+            "serviceGroupName": "transaction"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/transaction/placePnd",
+            "name": "PlacePnd",
+            "description": "PlacePnd",
+            "active": true,
+            "serviceGroupName": "transaction"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/transaction/removeHold",
+            "name": "Remove Hold",
+            "description": "Remove Hold",
+            "active": true,
+            "serviceGroupName": "transaction"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/transaction/singleTransferOtherBank",
+            "name": "SingleTransferOtherBank",
+            "description": "SingleTransferOtherBank",
+            "active": true,
+            "serviceGroupName": "transaction"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/transaction/singleTransferToEmail",
+            "name": "SingleTransferToEmail",
+            "description": "SingleTransferToEmail",
+            "active": true,
+            "serviceGroupName": "transaction"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/transaction/singleTransferToPhone",
+            "name": "SingleTransferToPhone",
+            "description": "SingleTransferToPhone",
+            "active": true,
+            "serviceGroupName": "transaction"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/transaction/singleTransferWithinBank",
+            "name": "SingleTransferWithinBank",
+            "description": "SingleTransferWithinBank",
+            "active": true,
+            "serviceGroupName": "transaction"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/pos/getPosByMerchantIdOrBranchIdOrEmail",
+            "name": "GetPosByMerchantIdOrBranchIdOrEmail",
+            "description": "GetPosByMerchantIdOrBranchIdOrEmail",
+            "active": true,
+            "serviceGroupName": "pos"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/pos/getPosByTerminalId",
+            "name": "Finds a POS by Terminal ID",
+            "description": "Finds a POS by Terminal ID",
+            "active": true,
+            "serviceGroupName": "pos"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/pos/getPosNearLocation",
+            "name": "GetPosNearLocation",
+            "description": "GetPosNearLocation",
+            "active": true,
+            "serviceGroupName": "pos"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/limit/getCustomerTransactionLimit/accountNumber",
+            "name": "Get Customer Transaction Limit",
+            "description": "Get Customer Transaction Limit",
+            "active": true,
+            "serviceGroupName": "limit"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/limit/getGlobalTransactionLimit",
+            "name": "Get Global Transaction Limit",
+            "description": "Get Global Transaction Limit",
+            "active": true,
+            "serviceGroupName": "limit"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/branch/getBranch/branchId",
+            "name": "Get Branch",
+            "description": "Get Branch",
+            "active": true,
+            "serviceGroupName": "branch"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/branch/getBranches",
+            "name": "Get Branches",
+            "description": "Get Branches",
+            "active": true,
+            "serviceGroupName": "branch"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/branch/getBranchesAtLocation/latitude?longitude=longitude",
+            "name": "Get Branches At Location",
+            "description": "Get Branches At Location",
+            "active": true,
+            "serviceGroupName": "branch"
+        },
+        {
+            "serviceUrl": "http://localhost:8081/access/getAuthorizationToken/clientId?clientSecret=clientSecret&grantType=grantType",
+            "name": "Get Authorization Token",
+            "description": "Get Authorization Token",
+            "active": true,
+            "serviceGroupName": "access"
+        }
+    ]
+}

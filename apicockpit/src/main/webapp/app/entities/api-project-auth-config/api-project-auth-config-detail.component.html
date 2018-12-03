@@ -1,0 +1,39 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="apiProjectAuthConfig">
+            <h2><span jhiTranslate="apicockpitApp.apiProjectAuthConfig.detail.title">Api Project Auth Config</span> {{apiProjectAuthConfig.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="apicockpitApp.apiProjectAuthConfig.clientId">Client Id</span></dt>
+                <dd>
+                    <span>{{apiProjectAuthConfig.clientId}}</span>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.apiProjectAuthConfig.clientSecret">Client Secret</span></dt>
+                <dd>
+                    <span>{{apiProjectAuthConfig.clientSecret}}</span>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.apiProjectAuthConfig.active">Active</span></dt>
+                <dd>
+                    <span>{{apiProjectAuthConfig.active}}</span>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.apiProjectAuthConfig.dateCreated">Date Created</span></dt>
+                <dd>
+                    <span>{{apiProjectAuthConfig.dateCreated}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/api-project-auth-config', apiProjectAuthConfig.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

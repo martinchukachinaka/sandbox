@@ -1,0 +1,26 @@
+{
+    "apicockpitApp": {
+        "apiConsumerProfile": {
+            "home": {
+                "title": "Api Consumer Profiles",
+                "createLabel": "Create a new Api Consumer Profile",
+                "createOrEditLabel": "Create or edit a Api Consumer Profile"
+            },
+            "created": "A new Api Consumer Profile is created with identifier {{ param }}",
+            "updated": "A Api Consumer Profile is updated with identifier {{ param }}",
+            "deleted": "A Api Consumer Profile is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Api Consumer Profile {{ id }}?"
+            },
+            "detail": {
+                "title": "Api Consumer Profile"
+            },
+            "name": "Name",
+            "active": "Active",
+            "dateCreated": "Date Created",
+            "projects": "Projects",
+            "platformUser": "Platform User",
+            "owner": "Owner"
+        }
+    }
+}

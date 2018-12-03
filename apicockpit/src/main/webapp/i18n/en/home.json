@@ -1,0 +1,20 @@
+{
+    "home": {
+        "title": "Welcome to Open Banking Nigeria API Sandbox",
+        "subtitle": "Working together to build the next generation of API standards for the Nigerian banking and financial industry. Driving innovation and choice for customers, businesses, fintech companies and banks.",
+        "createAccount": "Create a free Account",
+        "logged": {
+            "message": "You are logged in as user \"{{username}}\"."
+        },
+        "question": "If you have any question on JHipster:",
+        "link": {
+            "homepage": "JHipster homepage",
+            "stackoverflow": "JHipster on Stack Overflow",
+            "bugtracker": "JHipster bug tracker",
+            "chat": "JHipster public chat room",
+            "follow": "follow @java_hipster on Twitter"
+        },
+        "like": "If you like JHipster, don't forget to give us a star on",
+        "github": "GitHub"
+    }
+}

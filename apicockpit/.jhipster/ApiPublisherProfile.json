@@ -1,0 +1,67 @@
+{
+    "name": "ApiPublisherProfile",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "active",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "apiBaseUrl",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "apiDocUrl",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "Instant",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "consumerProfiles",
+            "otherEntityName": "apiConsumerProfile",
+            "otherEntityRelationshipName": "owner"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "serviceConfig",
+            "otherEntityName": "apiServiceGroup",
+            "otherEntityRelationshipName": "owner"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "platformUser",
+            "otherEntityName": "platformUser",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "apiPublisherProfile"
+        }
+    ],
+    "changelogDate": "20181124182210",
+    "entityTableName": "api_publisher_profile",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

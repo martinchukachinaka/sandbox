@@ -1,0 +1,49 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="dbProcConfig">
+            <h2><span jhiTranslate="apicockpitApp.dbProcConfig.detail.title">Db Proc Config</span> {{dbProcConfig.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="apicockpitApp.dbProcConfig.name">Name</span></dt>
+                <dd>
+                    <span>{{dbProcConfig.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.dbProcConfig.description">Description</span></dt>
+                <dd>
+                    <span>{{dbProcConfig.description}}</span>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.dbProcConfig.active">Active</span></dt>
+                <dd>
+                    <span>{{dbProcConfig.active}}</span>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.dbProcConfig.dateCreated">Date Created</span></dt>
+                <dd>
+                    <span>{{dbProcConfig.dateCreated}}</span>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.dbProcConfig.pScript">P Script</span></dt>
+                <dd>
+                    <span>{{dbProcConfig.pScript}}</span>
+                </dd>
+                <dt><span jhiTranslate="apicockpitApp.dbProcConfig.config">Config</span></dt>
+                <dd>
+                    <div *ngIf="dbProcConfig.configId">
+                        <a [routerLink]="['/api-svc-proc-config', dbProcConfig.configId, 'view']">{{dbProcConfig.configName}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/db-proc-config', dbProcConfig.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

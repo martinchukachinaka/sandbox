@@ -1,0 +1,27 @@
+{
+    "apicockpitApp": {
+        "apiSvcProcConfig": {
+            "home": {
+                "title": "Api Svc Proc Configs",
+                "createLabel": "Create a new Api Svc Proc Config",
+                "createOrEditLabel": "Create or edit a Api Svc Proc Config"
+            },
+            "created": "A new Api Svc Proc Config is created with identifier {{ param }}",
+            "updated": "A Api Svc Proc Config is updated with identifier {{ param }}",
+            "deleted": "A Api Svc Proc Config is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Api Svc Proc Config {{ id }}?"
+            },
+            "detail": {
+                "title": "Api Svc Proc Config"
+            },
+            "name": "Name",
+            "description": "Description",
+            "active": "Active",
+            "dateCreated": "Date Created",
+            "processorType": "Processor Type",
+            "order": "Order",
+            "serviceConfig": "Service Config"
+        }
+    }
+}
