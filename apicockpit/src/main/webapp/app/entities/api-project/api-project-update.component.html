@@ -65,7 +65,11 @@
                                     </div>
                                 </div>
                         </div>
-                        <ng-selectize [options]="apiprojectservices"></ng-selectize>
+                        <!-- <ng-selectize [options]="apiProject.apis"></ng-selectize> -->
+                        <ng-select
+                            [items]="apiProject.apis"
+                            [multiple]="true"
+                        ></ng-select>
 
 
 

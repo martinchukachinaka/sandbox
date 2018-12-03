@@ -2298,7 +2298,10 @@ button,
 input,
 optgroup,
 select,
-textarea {
+textarea,
+.card-category,
+.card-title,
+div.stats {
     font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
 }
 

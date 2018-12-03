@@ -8,7 +8,7 @@
       "sourceRoot": "src/main/webapp",
       "projectType": "application",
       "architect": {
-          "build": {
+          "builder": {
               "options": {
                   "styles": [
                     "node_modules/selectize/dist/css/selectize.css",
