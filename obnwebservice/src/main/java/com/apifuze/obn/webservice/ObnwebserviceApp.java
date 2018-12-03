@@ -13,6 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.Environment;
 
 import javax.annotation.PostConstruct;
@@ -24,6 +25,7 @@ import java.util.Collection;
 @SpringBootApplication
 @EnableConfigurationProperties({LiquibaseProperties.class, ApplicationProperties.class})
 @EnableDiscoveryClient
+@ComponentScan(basePackageClasses =ObnwebserviceApp.class,basePackages = {"com.apifuze","ng.openbanking.api"})
 public class ObnwebserviceApp {
 
     private static final Logger log = LoggerFactory.getLogger(ObnwebserviceApp.class);

@@ -94,6 +94,9 @@
         <sonar.tests>${project.basedir}/src/test/</sonar.tests>
 
         <!-- jhipster-needle-maven-property -->
+        <ng.openbanking.bank.service.version>0.0.6-SNAPSHOT</ng.openbanking.bank.service.version>
+        <ng.openbanking.web.service.version>0.0.6-SNAPSHOT</ng.openbanking.web.service.version>
+        <com.apifuze.utils>0.0.1-SNAPSHOT</com.apifuze.utils>
     </properties>
 
     <dependencyManagement>
@@ -378,6 +381,22 @@
             <artifactId>spring-security-data</artifactId>
         </dependency>
         <!-- jhipster-needle-maven-add-dependency -->
+        <dependency>
+            <groupId>com.apifuze</groupId>
+            <artifactId>utils</artifactId>
+            <version>${com.apifuze.utils}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ng.openbanking</groupId>
+            <artifactId>bank-service</artifactId>
+            <version>${ng.openbanking.bank.service.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ng.openbanking</groupId>
+            <artifactId>web-service</artifactId>
+            <version>${ng.openbanking.web.service.version}</version>
+        </dependency>
     </dependencies>
 
     <build>

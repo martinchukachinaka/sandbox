@@ -1,9 +1,9 @@
 package com.apifuze.obn.webservice.config;
 
-import com.apifuze.obn.webservice.security.*;
-import com.apifuze.obn.webservice.security.jwt.*;
-
-import org.springframework.context.annotation.Bean;
+import com.apifuze.obn.webservice.security.AuthoritiesConstants;
+import com.apifuze.obn.webservice.security.jwt.JWTConfigurer;
+import com.apifuze.obn.webservice.security.jwt.TokenProvider;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.http.HttpMethod;
@@ -24,6 +24,9 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     private final TokenProvider tokenProvider;
 
     private final SecurityProblemSupport problemSupport;
+
+    @Value("{obn.api.url.prefix:api}")
+    final  static String apiPrefix="/api";
 
     public SecurityConfiguration(TokenProvider tokenProvider, SecurityProblemSupport problemSupport) {
         this.tokenProvider = tokenProvider;
@@ -56,6 +59,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
             .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
         .and()
             .authorizeRequests()
+            .antMatchers(apiPrefix+"/access").permitAll()
+            .antMatchers(apiPrefix+"/general").permitAll()
             .antMatchers("/api/**").authenticated()
             .antMatchers("/management/health").permitAll()
             .antMatchers("/management/info").permitAll()

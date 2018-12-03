@@ -2,25 +2,22 @@ package com.apifuze.cockpit.initializer.service;
 
 import com.apifuze.cockpit.domain.*;
 import com.apifuze.cockpit.initializer.dto.ProjectDTO;
-import com.apifuze.cockpit.initializer.dto.SystemInitDTO;
 import com.apifuze.cockpit.repository.*;
 import com.apifuze.cockpit.service.UserService;
-import com.apifuze.cockpit.service.mapper.ApiPublisherProfileMapper;
-import com.apifuze.cockpit.service.mapper.ApiServiceConfigMapper;
-
+import com.apifuze.utils.DataService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
-import org.springframework.core.annotation.Order;
 import org.springframework.data.domain.Example;
 import org.springframework.stereotype.Component;
-import org.springframework.transaction.annotation.Propagation;
 import org.springframework.util.CollectionUtils;
 
 import javax.transaction.Transactional;
 import java.time.Instant;
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
 import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.stream.Collectors;
@@ -97,7 +94,7 @@ public class SamplePojectDataInitializer {
                 log.info("Waiting on system to finish initialization");
             }
             log.info("Loading sample project data");
-            ProjectDTO projectDTO = dataService.getData("sample-project.json", ProjectDTO.class);
+            ProjectDTO projectDTO = dataService.getData("sample-project", ProjectDTO.class);
             if (projectDTO != null) {
                 log.info("Initializing project [{}]", projectDTO.getName());
                 List<ApiServiceConfig> requiredApis = apiServiceConfigRepository.findAllById(Arrays.asList(projectDTO.getRequiredApis()));
