@@ -8,7 +8,14 @@ Navbar
 }
 
 .jh-navbar {
-    background-color: #353d47;
+    * {
+        color: #66615b !important;
+    }
+
+    background-color: transparent;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
     padding: 0.2em 1em;
     .profile-image {
         margin: -10px 0px;
@@ -20,6 +27,7 @@ Navbar
     .dropdown-item.active:focus,
     .dropdown-item.active:hover {
         background-color: #353d47;
+        border-radius: 0;
     }
     .dropdown-toggle::after {
         margin-left: 0.15em;
@@ -75,4 +83,10 @@ Logo styles
             background-size: contain;
         }
     }
+}
+
+.search-field {
+    color: #66615b;
+    background-color: rgba(222, 222, 222, 0.3);
+    border: none;
 }
