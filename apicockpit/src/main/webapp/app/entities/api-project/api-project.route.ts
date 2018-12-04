@@ -12,6 +12,7 @@ import { ApiProjectDetailComponent } from './api-project-detail.component';
 import { ApiProjectUpdateComponent } from './api-project-update.component';
 import { ApiProjectDeletePopupComponent } from './api-project-delete-dialog.component';
 import { IApiProject } from 'app/shared/model/api-project.model';
+import { UnsavedChangesGuard } from 'app/shared/guard/unsavedChangesGuard';
 
 @Injectable({ providedIn: 'root' })
 export class ApiProjectResolve implements Resolve<IApiProject> {
@@ -66,6 +67,7 @@ export const apiProjectRoute: Routes = [
             pageTitle: 'apicockpitApp.apiProject.home.title'
         },
         canActivate: [UserRouteAccessService]
+        // canDeactivate: [UnsavedChangesGuard]
     },
     {
         path: 'api-project/:id/edit',
@@ -89,7 +91,7 @@ export const apiProjectPopupRoute: Routes = [
             apiProject: ApiProjectResolve
         },
         data: {
-            authorities: ['ROLE_USER'],
+            // authorities: ['ROLE_USER'],
             pageTitle: 'apicockpitApp.apiProject.home.title'
         },
         canActivate: [UserRouteAccessService],

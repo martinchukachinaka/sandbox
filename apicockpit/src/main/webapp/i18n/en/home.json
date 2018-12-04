@@ -1,7 +1,8 @@
 {
     "home": {
-        "title": "Welcome, Java Hipster!",
-        "subtitle": "This is your homepage",
+        "title": "Welcome to Open Banking Nigeria API Sandbox",
+        "subtitle": "Working together to build the next generation of API standards for the Nigerian banking and financial industry. Driving innovation and choice for customers, businesses, fintech companies and banks.",
+        "createAccount": "Create a free Account",
         "logged": {
             "message": "You are logged in as user \"{{username}}\"."
         },

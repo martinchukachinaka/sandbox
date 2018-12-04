@@ -19,6 +19,9 @@ import { ApicockpitEntityModule } from './entities/entity.module';
 import * as moment from 'moment';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent, ActiveMenuDirective, ErrorComponent } from './layouts';
+import { SweetAlert2Module } from '@toverux/ngx-sweetalert2';
+import { SidebarComponent } from './layouts/sidebar/sidebar.component';
+import { DashboardComponent } from './layouts/dashboard/dashboard.component';
 
 @NgModule({
     imports: [
@@ -30,9 +33,19 @@ import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent
         ApicockpitHomeModule,
         ApicockpitAccountModule,
         // jhipster-needle-angular-add-module JHipster will add new module here
-        ApicockpitEntityModule
+        ApicockpitEntityModule,
+        SweetAlert2Module.forRoot()
     ],
-    declarations: [JhiMainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent],
+    declarations: [
+        JhiMainComponent,
+        NavbarComponent,
+        ErrorComponent,
+        PageRibbonComponent,
+        ActiveMenuDirective,
+        FooterComponent,
+        SidebarComponent,
+        DashboardComponent
+    ],
     providers: [
         {
             provide: HTTP_INTERCEPTORS,

@@ -1,6 +1,8 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
+import { SweetAlert2Module } from '@toverux/ngx-sweetalert2';
+
 import { ApicockpitSharedModule } from 'app/shared';
 import {
     ApiProjectComponent,
@@ -15,7 +17,7 @@ import {
 const ENTITY_STATES = [...apiProjectRoute, ...apiProjectPopupRoute];
 
 @NgModule({
-    imports: [ApicockpitSharedModule, RouterModule.forChild(ENTITY_STATES)],
+    imports: [ApicockpitSharedModule, RouterModule.forChild(ENTITY_STATES), SweetAlert2Module],
     declarations: [
         ApiProjectComponent,
         ApiProjectDetailComponent,

@@ -2,7 +2,7 @@ package com.apifuze.obn.bank.service;
 
 
 
-import com.apifuze.utils.DataService;
+
 import ng.openbanking.api.payload.account.Account;
 import ng.openbanking.api.payload.account.AccountBlock;
 import ng.openbanking.api.payload.account.AccountType;
@@ -33,8 +33,7 @@ public class AccountServiceImpl extends AbsractBankService implements BankAccoun
     private static final String DD_MODEL_FILE_NAME = "DiectDebit";
 
 
-    @Autowired
-    private DataService dataService;
+
 
     public Account getAccountByAccountNumber(String accountNumber) throws BankResourceNotFoundException, ServiceOperationNotSupported {
         return dataService.getSingleFromList(ACCOUNT_MODEL_FILE_NAME,Account.class);

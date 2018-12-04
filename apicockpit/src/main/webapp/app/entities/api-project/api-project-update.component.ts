@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpResponse, HttpErrorResponse } from '@angular/common/http';
 import { Observable } from 'rxjs';
@@ -15,11 +15,14 @@ import { ApiProjectServiceService } from 'app/entities/api-project-service';
 import { IApiConsumerProfile } from 'app/shared/model/api-consumer-profile.model';
 import { ApiConsumerProfileService } from 'app/entities/api-consumer-profile';
 
+import { UnsavedChangesGuard } from 'app/shared/guard/unsavedChangesGuard';
+
 @Component({
     selector: 'jhi-api-project-update',
-    templateUrl: './api-project-update.component.html'
+    templateUrl: './api-project-update.component.html',
+    styleUrls: ['./api-project-update.component.scss']
 })
-export class ApiProjectUpdateComponent implements OnInit {
+export class ApiProjectUpdateComponent implements OnInit, UnsavedChangesGuard {
     apiProject: IApiProject;
     isSaving: boolean;
 
@@ -29,6 +32,11 @@ export class ApiProjectUpdateComponent implements OnInit {
 
     apiconsumerprofiles: IApiConsumerProfile[];
     dateCreated: string;
+
+    @ViewChild('confirmUnsavedChanges')
+    confirmChangesPrompt;
+
+    selectedApis = [];
 
     constructor(
         private jhiAlertService: JhiAlertService,
@@ -72,6 +80,8 @@ export class ApiProjectUpdateComponent implements OnInit {
             },
             (res: HttpErrorResponse) => this.onError(res.message)
         );
+        console.log('apis = ', this.apiProject.apis);
+        console.log('api project= ', this.apiProject);
     }
 
     previousState() {
@@ -117,6 +127,7 @@ export class ApiProjectUpdateComponent implements OnInit {
     }
 
     getSelected(selectedVals: Array<any>, option: any) {
+        this.apiProject.apis = this.apiProject.apis ? this.apiProject.apis : [];
         if (selectedVals) {
             for (let i = 0; i < selectedVals.length; i++) {
                 if (option.id === selectedVals[i].id) {
@@ -124,6 +135,22 @@ export class ApiProjectUpdateComponent implements OnInit {
                 }
             }
         }
+        this.apiProject.apis.push(option);
+        this.selectedApis.push(option);
+        console.log(this.apiProject.apis);
         return option;
+    }
+
+    removeApi(apiOption) {
+        const index = this.apiProject.apis.findIndex(api => apiOption.id === api.id);
+        this.apiProject.apis.splice(index, 1);
+    }
+
+    canDeactivate() {
+        if (!true) {
+            return true;
+        } else {
+            this.confirmChangesPrompt.show();
+        }
     }
 }
