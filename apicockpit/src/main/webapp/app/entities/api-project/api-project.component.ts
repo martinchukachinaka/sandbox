@@ -154,19 +154,6 @@ export class ApiProjectComponent implements OnInit, OnDestroy {
         }
     }
 
-    deleteProject(apiProject: IApiProject) {
-        const modalRef = this.modalService.open(ApiProjectDeleteDialogComponent, { size: 'lg', backdrop: 'static' });
-        modalRef.componentInstance.apiProject = apiProject;
-        modalRef.result.then(
-            result => {
-                // Left blank intentionally, nothing to do here
-            },
-            reason => {
-                // Left blank intentionally, nothing to do here
-            }
-        );
-    }
-
     private paginateApiProjects(data: IApiProject[], headers: HttpHeaders) {
         this.links = this.parseLinks.parse(headers.get('link'));
         this.totalItems = parseInt(headers.get('X-Total-Count'), 10);
