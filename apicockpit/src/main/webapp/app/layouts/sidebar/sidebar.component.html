@@ -1,4 +1,3 @@
-
 <div class="sidebar" data-color="white" data-active-color="danger">
     <!--
       Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
@@ -10,7 +9,7 @@
         </div>
       </a>
       <a routerLink="/" class="simple-text logo-normal">
-        Open Banking
+        Open Banking Ng
         <!-- <div class="logo-image-big">
           <img src="../assets/img/logo-big.png">
         </div> -->
@@ -31,8 +30,8 @@
           </a>
         </li>
         <li>
-        <div class="navbar-collapse collapse" id="navbarResponsive" [ngbCollapse]="isNavbarCollapsed" [ngSwitch]="isAuthenticated()">
-            <ul class="nav" *ngSwitchCase="true">
+        <div class="navbar-collapse collapse" id="navbarResponsive" [ngbCollapse]="isNavbarCollapsed" >
+            <ul class="nav" >
                 <li ngbDropdown class="nav-item dropdown pointer" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                     <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="admin-menu">
                         <i class="nc-icon nc-single-02"></i>
