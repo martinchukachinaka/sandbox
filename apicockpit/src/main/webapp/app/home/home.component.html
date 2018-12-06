@@ -1,9 +1,10 @@
-<div class="home-no-auth">
-    <div class="col-md-12">
+<div class="row" [ngSwitch]="isAuthenticated()">
+    <div class="col-md-12" *ngSwitchCase="false">
         <div class="main-slider-caption container">
             <div>
-                <h1 jhiTranslate="home.title">Welcome to Open Banking Nigeria API Sandbox</h1>
-                <p jhiTranslate="home.subtitle">Working together to build the next generation of API standards for the Nigerian banking and financial
+                <h1 jhiTranslate="home.title">Open Banking Nigeria API Sandbox</h1>
+                <p jhiTranslate="home.subtitle">Working together to build the next generation of API standards for the
+                    Nigerian banking and financial
                     industry. Driving innovation and choice for customers, businesses, fintech companies and banks.</p>
                 <div class="header-button">
                     <span class="button" routerLink="register" tabindex="0" jhiTranslate="home.createAccount">Create a free Account</span>
@@ -13,4 +14,56 @@
         </div>
 
     </div>
+</div>
+
+<div class="row" [ngSwitch]="isAuthenticated()">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" *ngSwitchCase="true">
+        <div class="box-part text-center">
+            <i class="fa fa-cloud-upload fa-3x" aria-hidden="true" routerLink="/projects"></i>
+            <div >
+                <h4>Publish</h4>
+            </div>
+            <div class="text">
+                <span>Publish and manage APIs, create apps, and manage your deployments.</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" *ngSwitchCase="true">
+        <div class="box-part text-center">
+            <i class="fa fa-file-code-o fa-3x" aria-hidden="true"></i>
+            <div>
+                <h4>Discover</h4>
+            </div>
+            <div class="text">
+                <span>Discover what Open Banking APIs to use in your apps and projects.</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" *ngSwitchCase="true" routerLink="/profile">
+        <div class="box-part text-center">
+            <i class="fa fa-cogs fa-3x" aria-hidden="true"></i>
+            <div>
+                <h4>Administration</h4>
+            </div>
+            <div class="text">
+                <span>Configure your profile and manage users.</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row" [ngSwitch]="isAuthenticated()">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" *ngSwitchCase="true">
+        <div class="box-part text-center">
+            <i class="fa fa-cloud-upload fa-3x" aria-hidden="true" routerLink="/dashboard"></i>
+            <div >
+                <h4>Dash Board</h4>
+            </div>
+            <div class="text">
+                <span>View stats for your apps and projects.</span>
+            </div>
+        </div>
+    </div>
+
 </div>

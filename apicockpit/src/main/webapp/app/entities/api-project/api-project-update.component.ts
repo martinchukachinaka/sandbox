@@ -26,6 +26,7 @@ export class ApiProjectUpdateComponent implements OnInit, UnsavedChangesGuard {
     apiProject: IApiProject;
     isSaving: boolean;
 
+    apis: any;
     apikeys: IApiProjectAuthConfig[];
 
     apiprojectservices: IApiProjectService[];
@@ -48,6 +49,7 @@ export class ApiProjectUpdateComponent implements OnInit, UnsavedChangesGuard {
     ) {}
 
     ngOnInit() {
+        this.apis = [];
         this.isSaving = false;
         this.activatedRoute.data.subscribe(({ apiProject }) => {
             this.apiProject = apiProject;
@@ -89,6 +91,7 @@ export class ApiProjectUpdateComponent implements OnInit, UnsavedChangesGuard {
     }
 
     save() {
+        console.log('Saved apis', this.apis);
         this.isSaving = true;
         if (this.apiProject.id !== undefined) {
             this.subscribeToSaveResponse(this.apiProjectService.update(this.apiProject));

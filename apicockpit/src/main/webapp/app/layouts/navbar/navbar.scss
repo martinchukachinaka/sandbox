@@ -12,7 +12,7 @@ Navbar
         color: #66615b !important;
     }
 
-    background-color: transparent;
+    background-color: #fff;
     border-bottom: 1px solid #ddd;
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
@@ -76,10 +76,10 @@ Logo styles
         padding: 5px 15px;
         .logo-img {
             height: 45px;
-            width: 70px;
+            width: 150px;
             display: inline-block;
             vertical-align: middle;
-            background: url('../../../content/images/logo-jhipster.png') no-repeat center center;
+            background: url('../../../content/images/logo.png') no-repeat center center;
             background-size: contain;
         }
     }

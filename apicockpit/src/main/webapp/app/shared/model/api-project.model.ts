@@ -9,7 +9,7 @@ export interface IApiProject {
     dateCreated?: Moment;
     apiKeyClientId?: string;
     apiKeyId?: number;
-    apis?: IApiProjectService[];
+    apis?: any;
     ownerName?: string;
     ownerId?: number;
 }
@@ -23,7 +23,7 @@ export class ApiProject implements IApiProject {
         public dateCreated?: Moment,
         public apiKeyClientId?: string,
         public apiKeyId?: number,
-        public apis?: IApiProjectService[],
+        public apis?: any,
         public ownerName?: string,
         public ownerId?: number
     ) {

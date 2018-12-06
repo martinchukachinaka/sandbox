@@ -1,11 +1,11 @@
 package com.apifuze.cockpit.service.dto;
 
-import java.time.Instant;
-import javax.validation.constraints.*;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
+import java.time.Instant;
 import java.util.HashSet;
-import java.util.Set;
 import java.util.Objects;
+import java.util.Set;
 
 /**
  * A DTO for the ApiProject entity.
@@ -29,6 +29,8 @@ public class ApiProjectDTO implements Serializable {
     private String apiKeyClientId;
 
     private Set<ApiProjectServiceDTO> apis = new HashSet<>();
+
+    private Set<Long> selectedApiList = new HashSet<>();
 
     private Long ownerId;
 
@@ -148,5 +150,13 @@ public class ApiProjectDTO implements Serializable {
             ", owner=" + getOwnerId() +
             ", owner='" + getOwnerName() + "'" +
             "}";
+    }
+
+    public Set<Long> getSelectedApiList() {
+        return selectedApiList;
+    }
+
+    public void setSelectedApiList(Set<Long> selectedApiList) {
+        this.selectedApiList = selectedApiList;
     }
 }
