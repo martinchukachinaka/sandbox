@@ -5,12 +5,14 @@ import { Subscription } from 'rxjs';
 import { JhiEventManager, JhiParseLinks, JhiAlertService } from 'ng-jhipster';
 
 import { IApiProject } from 'app/shared/model/api-project.model';
-import { Principal } from 'app/core';
+import { Principal, User } from 'app/core';
 
 import { ITEMS_PER_PAGE } from 'app/shared';
 import { ApiProjectService } from './api-project.service';
 
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
+import { UserMgmtDeleteDialogComponent } from 'app/admin';
+import { ApiProjectDeleteDialogComponent } from 'app/entities/api-project/api-project-delete-dialog.component';
 @Component({
     selector: 'jhi-api-project',
     templateUrl: './api-project.component.html'

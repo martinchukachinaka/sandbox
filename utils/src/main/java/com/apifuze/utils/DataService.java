@@ -1,8 +1,9 @@
-package com.apifuze.cockpit.initializer.service;
+package com.apifuze.utils;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.databind.type.CollectionType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,7 @@ import org.springframework.util.StringUtils;
 
 import javax.annotation.PostConstruct;
 import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 
 @Component
@@ -30,17 +32,20 @@ public class DataService {
 
     private ObjectMapper objectMapper;
 
-    public <T> T getSingleFromList(String dataName) {
+
+    public <T> T getSingleFromList(String dataName,Class<T> typeClass) {
         T data=null;
-        List<T> dataList=getModelList(dataName);
-        if(CollectionUtils.isEmpty(dataList)) {
+        List<T> dataList=getModelList(dataName,typeClass);
+        if(!CollectionUtils.isEmpty(dataList)) {
             data=dataList.get(0);
         }
         return data;
     }
 
-    public <T> List<T>  getModelList(String dataName) {
-        return getData(dataName, List.class) ;
+
+
+    public <T> List<T>  getModelList(String dataName,Class<T> typeClass) {
+        return getDataFoList(dataName, typeClass) ;
     }
 
 
@@ -48,12 +53,12 @@ public class DataService {
         File file;
         String dataFilePath;
         if (StringUtils.isEmpty(OBN_HOME)) {
-            dataFilePath=String.format("/data/%s", dataFileName);
+            dataFilePath=String.format("/data/%s.json", dataFileName);
             log.debug("OBN_HOME not configured attempting to load from default {}",dataFilePath);
             ClassPathResource classPathResource = new ClassPathResource(dataFilePath);
             file =classPathResource.getFile();
         } else {
-            dataFilePath=String.format("%s/data/%s",OBN_HOME, dataFileName);
+            dataFilePath=String.format("%s/data/%s.json",OBN_HOME, dataFileName);
             log.debug("attempting to load from default {}",dataFilePath);
             file=new File(dataFilePath);
         }
@@ -63,12 +68,36 @@ public class DataService {
         return file;
     }
 
+    public <T> List<T> getDataFoList(String fileName, Class<T> type) {
+        try {
+            log.debug("Reading data from {} for {}", fileName, type.getSimpleName());
+            File file=getOBNDataFile(fileName);
+            if(file.exists()) {
+
+                CollectionType listType = objectMapper.getTypeFactory().constructCollectionType(ArrayList.class, type);
+                return objectMapper.readValue(file, listType);
+
+
+            }else{
+                log.error("File not found for {} from {}", type, fileName);
+            }
+        } catch (Exception e) {
+            log.warn("Cannot convert json data for {} using file {}", type, fileName);
+            log.error(null, e);
+        }
+        return null;
+    }
+
+
     public <T> T getData(String fileName, Class<T> type) {
         try {
             log.debug("Reading data from {} for {}", fileName, type.getSimpleName());
             File file=getOBNDataFile(fileName);
             if(file.exists()) {
-                return this.objectMapper.readValue(file, type);
+
+                return objectMapper.readValue(file, type);
+
+
             }else{
                 log.error("File not found for {} from {}", type, fileName);
             }

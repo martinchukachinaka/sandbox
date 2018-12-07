@@ -12,4 +12,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ApiConsumerProfileRepository extends JpaRepository<ApiConsumerProfile, Long> {
 
+    ApiConsumerProfile findByPlatformUserId(Long id);
+
+    ApiConsumerProfile findByPlatformUserUserId(Long id);
 }

@@ -28,7 +28,7 @@ module.exports = (options) => webpackMerge(commonConfig({ env: ENV }), {
                 '/h2-console',
                 '/auth'
             ],
-            target: `http${options.tls ? 's' : ''}://127.0.0.1:8080`,
+            target: `http${options.tls ? 's' : ''}://127.0.0.1:8081`,
             secure: false,
             changeOrigin: options.tls,
             headers: { host: 'localhost:9000' }
@@ -119,7 +119,7 @@ module.exports = (options) => webpackMerge(commonConfig({ env: ENV }), {
         new ForkTsCheckerWebpackPlugin(),
         new BrowserSyncPlugin({
             host: 'localhost',
-            port: 9000,
+            port: 9100,
             proxy: {
                 target: 'http://localhost:9060'
             },

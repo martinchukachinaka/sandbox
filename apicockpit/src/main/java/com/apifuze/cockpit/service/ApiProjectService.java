@@ -1,15 +1,20 @@
 package com.apifuze.cockpit.service;
 
+import com.apifuze.cockpit.domain.ApiConsumerProfile;
 import com.apifuze.cockpit.domain.ApiProject;
 import com.apifuze.cockpit.domain.ApiProjectAuthConfig;
+import com.apifuze.cockpit.domain.User;
+import com.apifuze.cockpit.repository.ApiConsumerProfileRepository;
 import com.apifuze.cockpit.repository.ApiProjectAuthConfigRepository;
 import com.apifuze.cockpit.repository.ApiProjectRepository;
+import com.apifuze.cockpit.repository.UserRepository;
+import com.apifuze.cockpit.security.AuthoritiesConstants;
+import com.apifuze.cockpit.security.SecurityUtils;
 import com.apifuze.cockpit.service.dto.ApiProjectDTO;
 import com.apifuze.cockpit.service.mapper.ApiProjectMapper;
 import com.apifuze.cockpit.service.util.RandomUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -31,12 +36,18 @@ public class ApiProjectService {
 
     private final ApiProjectAuthConfigRepository apiProjectAuthConfigRepository;
 
+    private final UserRepository userRepository;
+
+    private final ApiConsumerProfileRepository apiConsumerProfileRepository;
+
     private final ApiProjectMapper apiProjectMapper;
 
-    public ApiProjectService(ApiProjectRepository apiProjectRepository, ApiProjectAuthConfigRepository apiProjectAuthConfigRepository, ApiProjectMapper apiProjectMapper) {
+    public ApiProjectService(ApiProjectRepository apiProjectRepository, ApiProjectAuthConfigRepository apiProjectAuthConfigRepository, UserRepository userRepository,ApiConsumerProfileRepository apiConsumerProfileRepository,ApiProjectMapper apiProjectMapper) {
         this.apiProjectRepository = apiProjectRepository;
         this.apiProjectAuthConfigRepository=apiProjectAuthConfigRepository;
         this.apiProjectMapper = apiProjectMapper;
+        this.userRepository=userRepository;
+        this.apiConsumerProfileRepository=apiConsumerProfileRepository;
     }
 
     /**
@@ -57,6 +68,12 @@ public class ApiProjectService {
         if(apiProjectDTO.getDateCreated()==null) {
             apiProjectDTO.setDateCreated(Instant.now());
         }
+        if(SecurityUtils.isCurrentUserInRole(AuthoritiesConstants.ADMIN)) {
+        }else{
+            User user=userRepository.findOneByLogin(SecurityUtils.getCurrentUserLogin().get()).get();
+            ApiConsumerProfile consumer = apiConsumerProfileRepository.findByPlatformUserUserId(user.getId());
+            apiProjectDTO.setOwnerId(consumer.getId());
+        }
         ApiProject apiProject = apiProjectMapper.toEntity(apiProjectDTO);
         apiProject = apiProjectRepository.save(apiProject);
         return apiProjectMapper.toDto(apiProject);
@@ -70,9 +87,16 @@ public class ApiProjectService {
      */
     @Transactional(readOnly = true)
     public Page<ApiProjectDTO> findAll(Pageable pageable) {
-        log.debug("Request to get all ApiProjects");
-        return apiProjectRepository.findAll(pageable)
-            .map(apiProjectMapper::toDto);
+
+        if(SecurityUtils.isCurrentUserInRole(AuthoritiesConstants.ADMIN)) {
+            log.debug("Request to get all ApiProjects");
+            return apiProjectRepository.findAll(pageable).map(apiProjectMapper::toDto);
+        }else{
+            log.debug("Request to get all ApiProjects for owner");
+            User user=userRepository.findOneByLogin(SecurityUtils.getCurrentUserLogin().get()).get();
+            ApiConsumerProfile consumer = apiConsumerProfileRepository.findByPlatformUserUserId(user.getId());
+            return apiProjectRepository.findAllByOwnerId(consumer.getId(),pageable).map(apiProjectMapper::toDto);
+        }
     }
 
     /**

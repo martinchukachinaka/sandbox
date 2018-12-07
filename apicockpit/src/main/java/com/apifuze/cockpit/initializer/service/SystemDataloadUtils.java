@@ -1,23 +1,24 @@
 package com.apifuze.cockpit.initializer.service;
 
+
 import com.apifuze.cockpit.domain.*;
 import com.apifuze.cockpit.initializer.dto.SystemInitDTO;
 import com.apifuze.cockpit.repository.*;
-import com.apifuze.cockpit.service.ApiSvcProcConfigService;
 import com.apifuze.cockpit.service.mapper.ApiPublisherProfileMapper;
 import com.apifuze.cockpit.service.mapper.ApiServiceConfigMapper;
-
+import com.apifuze.utils.DataService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.data.domain.Example;
-import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.stereotype.Component;
 
 import javax.transaction.Transactional;
 import java.time.Instant;
-import java.util.*;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.stream.Collectors;
 
@@ -74,7 +75,7 @@ public class SystemDataloadUtils {
         if (apiPublisherProfileRepository.count() == 0) {
             log.info("Initializing system");
             Instant timestamp = Instant.now();
-            SystemInitDTO systemData = this.dataService.getData("system-init.json", SystemInitDTO.class);
+            SystemInitDTO systemData = this.dataService.getData("system-init", SystemInitDTO.class);
             if (systemData != null) {
                 User user = userRepository.getOne(3l);
                 PlatformUser platformUser = new PlatformUser();

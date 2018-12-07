@@ -2,24 +2,57 @@
 Main page styles
 ========================================================================== */
 
-.hipster {
-    display: inline-block;
-    width: 347px;
-    height: 497px;
-    background: url('../../content/images/hipster.png') no-repeat center top;
-    background-size: contain;
+.main-slider-caption.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+    padding: 30px;
+    width: 50%;
+    margin-left: 10%;
+    float: left;
+    margin-top: 10%;
 }
 
-/* wait autoprefixer update to allow simple generation of high pixel density media query */
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-    only screen and (-moz-min-device-pixel-ratio: 2),
-    only screen and (-o-min-device-pixel-ratio: 2/1),
-    only screen and (min-resolution: 192dpi),
-    only screen and (min-resolution: 2dppx) {
-    .hipster {
-        background: url('../../content/images/hipster2x.png') no-repeat center top;
-        background-size: contain;
-    }
+.main-slider-caption h1 {
+    text-transform: none;
+    margin: 0 0 15px;
+    line-height: 1.3;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.main-slider-caption h1 {
+    color: #27ae60;
+}
+
+.main-slider-caption p {
+    font-size: 20px;
+}
+
+.main-slider-caption p {
+    color: #000000;
+}
+
+.main-slider-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+    margin: auto;
+}
+
+.button {
+    background-color: #1a3d81;
+    color: #fff;
+    font-size: 13px;
+    border: 0;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 300ms ease 0s;
+    line-height: 1.9;
+    cursor: pointer;
 }
 
 .main-slider-caption.container {
@@ -71,4 +104,57 @@ Main page styles
     border-radius: 5px;
     transition: all 300ms ease 0s;
     line-height: 1.9;
+    cursor: pointer;
+}
+
+.main-slider-caption.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+    padding: 30px;
+    width: 50%;
+    margin-left: 10%;
+    float: left;
+}
+
+.main-slider-caption h1 {
+    text-transform: none;
+    margin: 0 0 15px;
+    line-height: 1.3;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.main-slider-caption h1 {
+    color: #27ae60;
+}
+
+.main-slider-caption p {
+    font-size: 20px;
+}
+
+.main-slider-caption p {
+    color: #000000;
+}
+
+.main-slider-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+    margin: auto;
+}
+
+.button {
+    background-color: #1a3d81;
+    color: #fff;
+    font-size: 13px;
+    border: 0;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 300ms ease 0s;
+    line-height: 1.9;
+    cursor: pointer;
 }
