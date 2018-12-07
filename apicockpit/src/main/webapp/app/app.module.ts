@@ -22,6 +22,7 @@ import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent
 import { SweetAlert2Module } from '@toverux/ngx-sweetalert2';
 import { SidebarComponent } from './layouts/sidebar/sidebar.component';
 import { DashboardComponent } from './layouts/dashboard/dashboard.component';
+import { MenuComponent } from 'app/layouts/menu/menu.component';
 import { NgSelectModule } from '@ng-select/ng-select';
 
 @NgModule({
@@ -46,7 +47,8 @@ import { NgSelectModule } from '@ng-select/ng-select';
         ActiveMenuDirective,
         FooterComponent,
         SidebarComponent,
-        DashboardComponent
+        DashboardComponent,
+        MenuComponent
     ],
     providers: [
         {
