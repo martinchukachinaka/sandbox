@@ -2,6 +2,11 @@
 Navbar
 ========================================================================== */
 
+#login,
+#logout {
+    cursor: pointer;
+}
+
 .navbar-version {
     font-size: 10px;
     color: #ccc;
@@ -23,10 +28,14 @@ Navbar
         width: 40px;
         border-radius: 50%;
     }
+    .dropdown-item {
+        color: #fff;
+    }
     .dropdown-item.active,
     .dropdown-item.active:focus,
     .dropdown-item.active:hover {
         background-color: #353d47;
+        color: #fff;
         border-radius: 0;
     }
     .dropdown-toggle::after {

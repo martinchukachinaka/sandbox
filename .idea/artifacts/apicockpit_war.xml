@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
   <artifact type="war" name="apicockpit:war">
     <output-path>$PROJECT_DIR$/apicockpit/target</output-path>
-    <root id="archive" name="apicockpit-0.0.1-SNAPSHOT.war">
+    <root id="archive" name="cockpit-0.0.1-SNAPSHOT.war">
       <element id="artifact" artifact-name="apicockpit:war exploded" />
     </root>
   </artifact>

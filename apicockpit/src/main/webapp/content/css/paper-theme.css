@@ -390,7 +390,7 @@ Copyright (c) 2015 Daniel Eden
     border-radius: 3px;
     padding: 11px 22px;
     cursor: pointer;
-    background-color: #66615b;
+    /*background-color: #66615b;*/
     color: #ffffff;
     -webkit-transition: all 150ms linear;
     -moz-transition: all 150ms linear;
@@ -3408,14 +3408,14 @@ a[data-toggle='collapse'][aria-expanded='true'] .caret,
 
 .dropdown-menu .dropdown-item:hover,
 .dropdown-menu .dropdown-item:focus {
-    color: #ffffff !important;
+    /*color: #ffffff !important;*/
     opacity: 1;
     text-decoration: none;
 }
 
 .dropdown-menu .dropdown-item:hover,
 .dropdown-menu .dropdown-item:focus {
-    background-color: #66615b;
+    /*background-color: #66615b;*/
 }
 
 .dropdown-menu.dropdown-primary .dropdown-item:hover,
@@ -5038,7 +5038,7 @@ img {
 
 .main-panel > .content {
     padding: 0 30px 30px;
-    min-height: calc(100vh - 123px);
+    min-height: calc(100vh);
     margin-top: 10px;
 }
 
@@ -5807,6 +5807,7 @@ img {
     }
     .navbar.bg-white:not(.navbar-transparent) .navbar-toggler-bar {
         background-color: #66615b;
+        color: #fff;
     }
     .navbar .toggled .navbar-toggler-bar {
         width: 24px;

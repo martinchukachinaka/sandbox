@@ -119,7 +119,7 @@ module.exports = (options) => webpackMerge(commonConfig({ env: ENV }), {
         new ForkTsCheckerWebpackPlugin(),
         new BrowserSyncPlugin({
             host: 'localhost',
-            port: 9000,
+            port: 9100,
             proxy: {
                 target: 'http://localhost:9060'
             },
