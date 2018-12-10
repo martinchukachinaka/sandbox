@@ -22,3 +22,8 @@
         flex-grow: 1;
     }
 }
+
+.card.router-outlet-wrapper {
+    padding: 3rem;
+    border-radius: 5px;
+}
