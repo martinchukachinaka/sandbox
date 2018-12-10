@@ -45,6 +45,7 @@
                                 <div class="col-12">
                                     <ng-select
                                         name="apis"
+                                        ngDefaultControl
                                         [items]="apiprojectservices"
                                         [multiple]="true"
                                         [closeOnSelect]="false"
@@ -78,12 +79,12 @@
 
     </div>
 
-    <swal
-        #confirmUnsavedChanges
-        title="Confirm"
-        text="You have unsaved changes. Leaving this page means losing those changes. Do you want to continue?"
-        type="info"
-        [showCancelButton]="true"
-        [focusCancel]="true"
-        (confirm)="leavePage()">
-    ></swal>
+    <!--<swal-->
+        <!--#confirmUnsavedChanges-->
+        <!--title="Confirm"-->
+        <!--text="You have unsaved changes. Leaving this page means losing those changes. Do you want to continue?"-->
+        <!--type="info"-->
+        <!--[showCancelButton]="true"-->
+        <!--[focusCancel]="true"-->
+        <!--(confirm)="leavePage()">-->
+    <!--&gt;</swal>-->

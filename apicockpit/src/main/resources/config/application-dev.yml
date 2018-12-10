@@ -57,16 +57,16 @@ spring:
     liquibase:
         contexts: dev
     mail:
-        host: smtp.gmail.com
+        host: smtp.sendgrid.net
         port: 587
-        username: payfuzeoss@gmail.com
-        password: payfuzeoss.12
+        username: apikey
+        password: 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
         protocol: smtp
         tls: true
         properties.mail.smtp:
             auth: true
             starttls.enable: true
-            ssl.trust: smtp.gmail.com
+            ssl.trust: smtp.sendgrid.net
     messages:
         cache-duration: PT1S # 1 second, see the ISO 8601 standard
     thymeleaf:
